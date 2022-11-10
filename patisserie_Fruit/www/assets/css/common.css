@@ -1,0 +1,452 @@
+/* リセット */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+
+/* よく使うもの */
+.ds_f {
+  display: flex;
+}
+
+.jc_sb {
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 全体 */
+body {
+  font-family: "Yu Gothic UI", "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ヘッダー上部 */
+/*携帯用ナビゲーション非表示*/
+header button {
+  display: none;
+}
+
+header .phone {
+  display: none;
+}
+
+/* header */
+header .top {
+  background-color: #f2eee7;
+}
+
+header h1 {
+  padding: 30px 70px;
+}
+
+header .sns {
+  margin: 13px 50px;
+  justify-content: end;
+}
+
+header .sns p {
+  width: 40px;
+  height: 35px;
+  line-height: 40px;
+  margin-left: 15px;
+}
+
+header .addres {
+  font-size: 15.5px;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+  margin-right: 35px;
+  font-weight: 400;
+}
+
+/* スライドショー関係 */
+/* スライド画像 */
+.res {
+  display: none;
+}
+
+#slide {
+  z-index: 1;
+}
+
+.slide ul {
+  position: relative;
+}
+
+.slide li {
+  position: absolute;
+  width: 100%;
+}
+
+.slide li img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+
+/* スライド下のボタン */
+.btn {
+  text-align: center;
+  padding-top: 710px;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+.btn ul {
+  display: inline-block;
+}
+
+.btn ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+.btn ul li:last-child {
+  margin-right: 0;
+}
+
+.btn ul li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border-radius: 10px;
+  background-color: #ddac8a;
+}
+
+.btn ul li a.target {
+  background-color: #42210b;
+}
+
+/* ナビゲーション */
+header .pc {
+  position: relative;
+  z-index: 9999;
+  height: 55px;
+}
+
+header .pc ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+}
+
+header .pc li {
+  width: 160px;
+}
+
+header .pc li:last-child {
+  width: 180px;
+}
+
+header .pc li a {
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+  font-size: 18px;
+  color: #333;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 13px;
+  font-weight: 300;
+  text-align: center;
+}
+/*書き足し部分*/
+header .pc li a:last-child{
+  font-size: 15px;
+}
+
+/* ナビゲーションのフェードイン・アウト */
+.fadein_logo {
+  z-index: 99999;
+  top: 16px;
+  left: 140px;
+  visibility: hidden;
+}
+
+/* フェードイン時に入るクラス */
+.fadein_logo2 {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.fadein_logo img {
+  width: 150px;
+}
+
+
+/* totop */
+main {
+  position: relative;
+}
+
+.totop {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  animation: arrowmove 1s ease-in-out infinite;
+}
+@keyframes arrowmove{
+  0%{bottom:1%;}
+  50%{bottom: 1.2%;}
+ 100%{bottom:1%;}
+}
+
+.totop a {
+  font-size: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+
+
+/*フッター*/
+footer {
+  background-color: #F2EEE7;
+  background-image: url(../images/common/border_brown.png);
+  background-repeat: repeat-x;
+  min-height: 255x;
+  margin-top: 35px;
+}
+
+footer img {
+  width: 250px;
+  height: 50px;
+}
+
+footer nav {
+  padding-left: 70px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+footer nav ul {
+  padding-right: 75px;
+  margin-top: 47px;
+}
+
+footer nav ul li {
+  padding-bottom: 10px;
+}
+
+footer nav ul li a {
+  color: #333;
+  font-size: 16px;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+}
+
+
+footer .f_shop {
+  margin-top: 47px;
+  margin-right: 50px;
+}
+
+footer .f_logo {
+  padding-right: 20px;
+}
+
+footer .f_address {
+  color: #42210b;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+footer .f_shop dl {
+  color: #42210b;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 15px;
+  display: flex;
+}
+
+footer .f_shop dt {
+  float: left;
+  clear: left;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+footer .copyright {
+  font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #333;
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+
+
+/* フェードイン */
+.fadein,
+.fadein_n{
+  /* 最初は非表示 */
+  transform: translateY(-30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 1s, opacity 1s, visibility 1s;
+}
+.is-fadein {
+  /* フェードイン時に入るクラス */
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+  /* 定型文 */
+  .wrapper {
+    width: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 横並び解除 */
+  .ds_f{
+    flex-direction: column;
+  }
+  footer .f_shop dl {
+    display: block;
+  }
+  /* 要素を消す */
+  header .pc,
+  header .sns,
+  header .addres,
+  footer .f_nav,
+  #slide{
+    display: none;
+  }
+
+
+  /* widthの調整 */
+  header .sns p {
+    width: 100%;
+  }
+
+  /* 幅の調整 */
+  header {
+    margin-bottom: 20px;
+  }
+  /*ハンバーガーボタン*/
+  header button {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 99999;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  /* ヘッダー */
+  header{
+    margin-bottom: 20px;
+  }  
+  header h1 {
+    margin: 0;
+    text-align: left;
+    width: 60%;
+    padding: 20px;
+  }
+  header .phone {
+    display: block;
+    z-index: 99998;
+    position: fixed;
+    top: 0;
+    left: -640px;
+    width: 100%;
+  }
+  header .phone a {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+  }
+  header .phone li {
+    height: 100px;
+    background-color: rgba(253, 253, 253, 0.9);
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+  }
+  header button {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 99999;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  /*footer*/
+  footer {
+    margin: auto;
+  }
+
+  footer .f_shop {
+    margin:auto;
+    padding-top: 50px;
+  }
+  footer .f_logo {
+    padding-right: 0;
+  }
+  footer .f_shop dl {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  footer .f_shop dt {
+    margin-left: 0;
+    width: 80px;
+  }
+
+}

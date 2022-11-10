@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <title>portfolio</title>
+</head>
+
+<body>
+
+  <!-- ハンバーガーボタン -->
+  <div class="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- ナビゲーション -->
+  <nav class="always">
+    <ul class="vertical ds_f">
+      <li><a href="#profile">profile</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#skill">skill</a></li>
+    </ul>
+  </nav>
+  <nav class="humberger">
+    <ul>
+      <li><a href="#profile">profile</a></li>
+      <li><a href="#work">work</a>
+        <ul>
+          <li><a href="yaezaki/index.html">御宿 やえざき</a></li>
+          <li><a href="patisserie_Fruit/index.html">patisserie Fruit</a></li>
+          <li><a href="hairsalon_more/index.html">HAIR SALON_MORE</a></li>
+          <li><a href="this_site/index.html">portfolio（現サイト）</a></li>
+        </ul>
+      </li>
+      <li><a href="#skill">skill</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="nav_bg"></div>
+
+
+  <main class="wrapper">
+
+    <!-- サイトタイトル -->
+    <h1>
+      portfolio
+    </h1>
+
+    <div class="scroll">
+      <a href="#profile">
+        <span>Scroll</span>
+      </a>
+    </div>
+
+
+
+    <!-- 自己紹介セクション -->
+    <section id="profile">
+
+      <!-- タイトル -->
+      <h2>私について</h2>
+      <h3>about</h3>
+
+      <!-- 自己紹介内容 -->
+      <div class="introduction ds_f">
+        <!-- 自画像 -->
+        <p class="faceimg"><img src="assets/images/top/me.png" alt="自画像"></p>
+
+        <!-- 自己紹介・文章部分 -->
+        <div class="prof_text">
+          <p>そうま ゆみ</p>
+          <p>相馬 優美</p>
+          <p>
+            1991年、秋田県生まれ。<br>
+            高校を卒業し地元の工場に就職するも、昔からなりたかった美容師の夢があきらめきれず専門学校に入学。<br>
+          </p>
+          <p>
+            無事美容師になれ、自分の技術でお客様に喜んでもらうことにやりがいを感じていたが、一人のお客様に時間をかけられないことや、一発勝負の仕事内容が自分の性格に合っていないことに気づき、美容室を退社。<br>
+          </p>
+          <p>
+            アシスタント業務がとても楽しかったので、ECサイトの営業アシスタントとして転職。<br>
+            初めてのIT業界だったが、常に良いものを求めてアップデートしていく業界にとても魅力を感じる。<br>
+            退職後、技術を学びたいと思い職業訓練校にてHTML5・CSS3・jQueryを勉強。日々勉強に勤しむ。<br>
+            今後はPHPとWordpressの勉強もしていく予定。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- workセクション -->
+    <section id="work">
+      <!-- タイトル -->
+      <h2>制作物</h2>
+      <h3>work</h3>
+
+      <!-- 制作物 -->
+      <ul class="ds_f">
+        <li>
+          <figure><a href="yaezaki/index.html"><img src="assets/images/common/comp1.png" alt="御宿 やえざき"></a></figure>
+          <figcaption>御宿 やえざき（架空の旅館）</figcaption>
+          <p>個人製作（制作期間：10日）</p>
+        </li>
+        <li>
+          <figure><a href="patisserie_Fruit/index.html"><img src="assets/images/common/comp2.jpg" alt="patisserie Fruit"></a></figure>
+          <figcaption>patisserie Fruit（架空のケーキ屋さん）</figcaption>
+          <p>グループ制作（制作期間：9日）</p>
+        </li>
+        <li>
+          <figure><a href="hairsalon_more/index.html"><img src="assets/images/common/comp3.jpg" alt="HAIR SALON_MORE"></a></figure>
+          <figcaption>HAIR SALON_MORE（架空の美容室）</figcaption>
+          <p>個人製作（制作期間：8日）</p>
+        </li>
+        <li>
+          <figure><a href="this_site/index.html"><img src="assets/comp/comp.jpg" alt="ポートフォリオサイト"></a></figure>
+          <figcaption>ポートフォリオサイト（現サイト）</figcaption>
+          <p>個人製作（制作期間：10日）</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skill">
+      <!-- タイトル -->
+      <h2>出来ること</h2>
+      <h3>skill</h3>
+
+      <ul class="ds_f">
+        <li>
+          <h4>HTML5&CSS3</h4>
+          <p class="icon"><img src="assets/images/top/html_css.png" alt="html5とCSS3"></p>
+          <p>
+            わかりやすく簡潔な記述、タグの意味を考えての記述を心がけております。<br>
+            レスポンシブの対応も可能です。<br>
+            エディタはVisual Studio Codeを使っております。
+          </p>
+        </li>
+        <li>
+          <h4>jQuery</h4>
+          <p class="icon"><img src="assets/images/top/jQuery.png" alt="jQuery"></p>
+          <p>
+            動きのあるサイトにするために使用します。<br>
+            いちからコードを書くのはまだ難しいので絶賛勉強中です。
+          </p>
+        </li>
+        <li>
+          <h4>Photoshop&illustrator</h4>
+          <p class="icon"><img src="assets/images/top/adobe.png" alt="PhotoshopとIllustrator"></p>
+          <p>
+            ロゴやアイコン制作などはillustrator、写真の加工、合成などにはPhotoshopを使用しております。<br>
+            カンプの作成はその時に応じてどちらかを使用しております。<br>
+            まだ最低限の機能しか使えてないので、日々勉強中です。
+          </p>
+        </li>
+        <li>
+          <h4>事務ツール</h4>
+          <p class="icon"><img src="assets/images/top/PC.png" alt="業務ツール"></p>
+          <p>
+            Wordは文章作成、Excelでは四則演算・表の作成、PowerPointではプレゼンテーション作成など<br>
+            事務作業などに使う簡単なの操作ができます。<br>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="totop">
+      <a href="#">
+        <span>top</span>
+      </a>
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* 全体 */
+body {
+  background-color: #f2eee7;
+  color: #3c210f;
+}
+
+main {
+  min-height: 1700px;
+}
+
+/* ナビゲーション */
+header .pc .news {
+	background-color: #f3b36a;
+}
+header .pc .news a {
+	color: #fff;
+}
+
+/* コンテンツ */
+.border {
+  background-image: url(../images/common/border_brown.png);
+  background-repeat: repeat-x;
+  color: transparent;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 7px;
+  padding-top: 60px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.content_box {
+  padding-top: 60px;
+}
+
+
+.fadein_right {
+  /* 最初は非表示 */
+  transform: translateX(-30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 1s, opacity 1s, visibility 1s;
+}
+.fadein_left {
+  /* 最初は非表示 */
+  transform: translateX(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 1s, opacity 1s, visibility 1s;
+}
+.fadein_top {
+  /* 最初は非表示 */
+  transform: translateY(-30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 1s, opacity 1s, visibility 1s;
+}
+.is-fadein {
+  /* フェードイン時に入るクラス */
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/*一番上のメニューのフェードイン*/
+.content:first-child {
+  animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+.content {
+  position: relative;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* コンテンツ内の文章 */
+.content .text {
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+  width: 590px;
+  height: 330px;
+  text-align: center;
+  background-color: #f4f3ee;
+  position: relative;
+}
+
+.content .text p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 35px;
+}
+
+.content .text p:nth-child(2) {
+  color: #bc0f0f;
+  font-size: 24px;
+  min-height: 30px;
+}
+
+.content .text p:nth-child(3) {
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.content .text p:nth-child(4) {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* 上に浮いてる果物の設定の設定 */
+.text .deco_blueberry {
+  position: absolute;
+  right: 0;
+}
+
+
+.text .deco_raspberry {
+  position: absolute;
+  transform: rotate(15deg);
+
+}
+
+
+.text .deco_rosemary {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+}
+
+
+/* バナー */
+main .event_info {
+  padding-bottom: 135px;
+}
+
+main .event_info h3 {
+  text-align: center;
+  padding-bottom: 45px;
+  color: #42210b;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+main .event_content {
+  justify-content: space-around;
+  margin: 0 100px;
+}
+
+main .event_content .e_text {
+  color: #42210b;
+  font-size: 16px;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+  padding-top: 20px;
+}
+
+main .event_content .e_text span {
+  color: #333;
+  font-size: 14px;
+}
+
+main .event_content .e_text::before {
+  content: "■";
+}
+
+/* フッター */
+footer {
+  background-image: url(../images/common/border_brown.png);
+  background-repeat: repeat-x;
+}
+
+footer img {
+  width: 250px;
+  height: 50px;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* 幅調整 */
+  header .sns p {
+    width: 100%;
+  }
+
+  /* 消す */
+  .addres,
+  footer nav ul {
+    display: none;
+  }
+
+  /* その他 */
+
+  /* メイン */
+  main {
+    padding-bottom: 100px;
+  }
+
+  .border {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    padding-top: 22px;
+  }
+
+  .content_box {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-top: 0;
+  }
+  .content:nth-child(even) {
+    display: block;
+  }
+  .content .text {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  /* 上に浮いてる果物たち */
+  .text .deco_blueberry img {
+    top: 0px;
+    left: 330px;
+  }
+
+  .text .deco_raspberry img {
+    top: 0px;
+  }
+
+  /* バナー */
+  main .banner {
+    text-align: center;
+  }
+
+  main .event_info {
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  main .event_info h3 {
+    padding-bottom: 30px;
+    font-size: 25px;
+  }
+
+  main .event_content .e_text {
+    font-size: 13px;
+  }
+
+  main .event_content .e_text span {
+    font-size: 12px;
+  }
+
+  main .event_content .marche .e_text {
+    padding-bottom: 20px;
+  }
+
+  /* totop */
+  .totop {
+    bottom: 60px;
+  }
+
+
+}

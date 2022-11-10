@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+body h1,
+.cake {
+	text-align: center;
+}
+
+main {
+	color: #42210b;
+}
+
+main h1 {
+	margin: 0px 7px 0;
+	padding-top: 60px;
+	letter-spacing: 5px;
+}
+
+.reserve_text {
+	text-align: center;
+	color: #42210b;
+	margin-bottom: 20px;
+}
+
+main {
+	background-color: #f2eee7;
+	padding-bottom: 160px;
+}
+
+
+main .greeting {
+	background-image: url(../images/common/border_brown.png);
+	background-repeat: repeat-x;
+	margin-top: 40px;
+}
+
+.border {
+	background-image: url(../images/common/border_brown.png);
+	background-repeat: repeat-x;
+	margin-top: 25px;
+	color: transparent;
+}
+
+.cake {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+main h2 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* ナビゲーション */
+header .pc .reserved {
+	background-color: #98e493;
+}
+header .pc .reserved a {
+	color: #fff;
+}
+
+/* バリデーションチェック */
+.vali div {
+	margin-bottom: 25px;
+}
+
+.vali .a {
+	width: 300px;
+	display: inline-grid;
+}
+
+.vali .box1 {
+	width: 800px;
+	margin: 30px auto 80px;
+	display: block;
+	background: #FFF;
+	border-radius: 15px;
+	padding: 50px 40px;
+}
+
+.vali .box2 {
+	width: 800px;
+	margin: 30px auto 0;
+	display: block;
+	background: #FFF;
+	border-radius: 15px;
+	padding: 50px 40px;
+}
+
+
+header h2 {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.vali p {
+	font-size: 18px;
+
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.vali .alert {
+	font-size: 10px;
+	font-weight: normal;
+	margin: 10px 0;
+	color: #ff5a35;
+}
+
+.textSection1 .ds_f,
+.textSection2 .ds_f,
+.textSection10 .ds_f,
+.textSection11 .ds_f {
+	float:right;
+	clear: both;
+	margin-right: 140px;
+}
+
+#text_a, #text_b, #text_c, #text_d, #text_j, #text_k, #text_l, #text_m{
+	width: 150px;
+	height: 20px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+/*↑↓ここのマージン書き足す*/
+#text_a, #text_c, #text_j, #text_l{
+	margin-right: 10px;
+}
+#text_a, #text_b, #text_c, #text_d, #text_j, #text_k, #text_l, #text_m,
+textarea {
+	padding: 5px;
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #CCC;
+
+}
+
+#text_e, #mail{
+	width: 420px;
+	height: 20px;
+	font-size: 14px;
+}
+
+#text_e, #mail, #text_candle
+textarea {
+	padding: 5px;
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #CCC;
+
+}
+
+#text_candle {
+	width: 50px;
+	height: 20px;
+	font-size: 14px;
+}
+
+
+
+textarea {
+	width: 420px;
+	height: 150px;
+	resize: none;
+}
+
+.submitBtn_1,
+.submitBtn_2 {
+	color: #5b3e2a;
+	background-color: #a5958b;
+	font-size: 14px;
+	border: 0;
+	display: block;
+	margin: 0 auto;
+	padding: 12px 35px;
+}
+
+.submitBtn_1:focus {
+	outline: none;
+}
+
+.submitBtn_2:focus {
+	outline: none;
+}
+.zoomIn{
+	animation-name:zoomInAnime;
+	animation-duration:0.5s;
+	animation-fill-mode:forwards;
+  }
+  
+  @keyframes zoomInAnime{
+	from {
+	transform: scale(0.6);
+	}
+  
+	to {
+		transform: scale(1);
+	}
+  }
+  
+
+.cake, .reserve_text{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.totop a {
+	border: 1px solid #000;
+	border-radius: 50%;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+footer {
+	margin-top: 0;
+}
+
+
+@media screen and (max-width:640px) {
+
+	.content_text1 {
+		background-image: url(../images/top/content1_bg.png), none, none;
+	}
+
+	.content_text2 {
+		background-image: url(../images/top/content2_bg.png), none, none;
+	}
+
+	/* 段組みの解除 */
+	.vali {
+		display: block;
+	}
+
+	/* widthの調整 */
+	.vali {
+		width: auto;
+	}
+
+	/* heightの調整 */
+	.vali {
+		height: auto;
+	}
+
+	/* 余白の調整 */
+	.vali div {
+		margin-bottom: 0;
+	}
+	.vali a{
+		display: flex;
+	}
+	.vali .box1 {
+		margin-left: auto;
+		margin-right: auto;
+		width: 65%;
+	}
+
+	.vali .box2 {
+		margin-left: auto;
+		margin-right: auto;
+		width: 65%;
+	}
+
+	.reserve_text {
+		font-size: 10px;
+		width: 90%;
+	}
+
+	input[type="text"],
+	input[type="radio"],
+	select,
+	textarea {
+		margin-bottom: 20px;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	.textSection01,
+	.textSection02,
+	.textSection03,
+	.textSection04 {
+		display: block;
+	}
+
+	.textSection1 .ds_f,
+	.textSection2 .ds_f,
+	.textSection10 .ds_f,
+	.textSection11 .ds_f {
+		display: block;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+
+	#text_a, #text_b, #text_c, #text_d, #text_j, #text_k, #text_l, #text_m,
+	#text_e, #mail {
+		width: 90%;
+		margin-bottom: 10px;
+	}
+	
+	#text_a, #text_b, #text_c, #text_d, #text_j, #text_k, #text_l, #text_m{
+		margin-left: 0;
+	}
+	/*↑↓ここ書き足し部分*/
+	#text_a, #text_c, #text_j, #text_l{
+		margin-right: 0;
+	}
+
+	header {
+		margin-bottom: 0;
+	}
+
+	main h1 {
+		margin: 0;
+		padding-top: 30px;
+	}
+
+	#text_e, #mail {
+		width: 100%;
+	}
+	.vali .a {
+    width: 100%;
+	}
+
+}

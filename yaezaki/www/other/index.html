@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/other.css">
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/other.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <link rel="icon" href="../favicon.ico">
+  <title>other | 御宿 やえざき</title>
+</head>
+
+<body>
+  <!-- トップへ戻るボタン -->
+  <div class="totop">
+    <a href="#">
+      <p><img src="../assets/images/common/totop.png" alt="トップに戻る"></p>
+      <p class="vertical">
+        <span class="text-combine">T</span>
+        <span class="text-combine">O</span>
+        <span class="text-combine">P</span>
+        へ戻る
+      </p>
+    </a>
+  </div>
+
+  <header>
+
+    <!-- タイトル -->
+    <div class="title">
+      <a href="../index.html">
+        <h1><img src="../assets/images/common/logo.png" alt="ロゴ">
+        </h1>
+        <p class="vertical">御宿 やえざき</p>
+        <p>yaezaki</p>
+      </a>
+    </div>
+
+    <!-- ナビゲーション -->
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="../about/index.html">やえざきについて</a></li>
+          <li><a href="../room/index.html">客室</a></li>
+          <li><a href="../spa/index.html">温泉</a></li>
+          <li><a href="../meal/index.html">料理</a></li>
+          <li><a href="../news/index.html">お知らせ</a></li>
+          <li><a href="#" class="color">アクセス・問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ↓ハンバーガーボタン -->
+    <p class="hamburger"><img src="../assets/images/common/hamburger.png" alt="ハンバーガーボタン"></p>
+
+    <!-- 空席確認のボタン -->
+    <div class="reserve">
+      <p><a href="">空席確認</a></p>
+    </div>
+  </header>
+
+  <!-- ↑ここまで一緒 -->
+
+
+  <!-- メイン -->
+  <main>
+    <section class="other">
+      <div class="main_title">
+        <h2 class="vertical">
+          アクセス・お問い合わせ
+        </h2>
+        <p><img src="../assets/images/other/other_title.jpg" alt="街並み"></p>
+      </div>
+
+      <div class="bread">
+        <ul class="ds_f">
+          <li><a href="../index.html"><img src="../assets/images/common/house.png" alt="家のアイコン" width="20"></a></li>
+          <li><a href="#">アクセス・お問い合わせ</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="access">
+      <div class="inside_title">
+        <h2 class="vertical">
+          アクセス
+        </h2>
+      </div>
+
+      <div class="access_content ds_f">
+        <address>
+          <ul>
+            <li>&#12306;879-5432</li>
+            <li>大分県由布市湯布院町川上1337</li>
+            <li>【経路】</li>
+            <li>1.由布院駅よりお車にて約6分</li>
+            <li>2.由布院駅前バスセンターより別府駅西口行きに乗車<br>
+              「岳本」で下車し、その後徒歩約6分</li>
+            <li>3.当館からの送迎もやっております（事前の予約必須）</li>
+          </ul>
+        </address>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.8419126455537!2d131.3671364153553!3d33.27063078082575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546ae86435fe853%3A0x8d4d90f5e8293a90!2z44CSODc5LTUxMDIg5aSn5YiG55yM55Sx5biD5biC5rmv5biD6Zmi55S65bed5LiK77yR77yT77yT77yX!5e0!3m2!1sja!2sjp!4v1666067430809!5m2!1sja!2sjp"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquiry">
+      <div class="inside_title">
+        <h2 class="vertical">
+          お問い合わせ
+        </h2>
+      </div>
+
+      <div class="inquiry_content">
+
+        <form action="program.php" method="post">
+          <div class="text1">
+            <p><label for="name">お名前</label></p>
+            <p class="alert">お名前を入れてください。</p>
+            <input type="text" name="userName" id="name" placeholder="例）苗字 名前">
+          </div>
+
+          <div class="text2">
+            <p><label for="email">メールアドレス</label></p>
+            <p class="alert">メールアドレスを入れてください。</p>
+            <input type="email" name="userMail" id="email" placeholder="ご連絡がつくメールアドレスをご入力ください">
+          </div>
+
+          <div class="select1">
+            <p>お問い合わせ種別</p>
+            <p class="alert">質問の種類を選択してください。</p>
+            <select name="contentType" id="contentType">
+              <option value="選択してください">選択してください</option>
+              <option value="客室について">客室について</option>
+              <option value="温泉について">温泉について</option>
+              <option value="料理について">料理について</option>
+            </select>
+          </div>
+
+          <div class="textarea">
+            <p>お問い合わせ内容</p>
+            <p class="alert">ご要望・ご質問内容を入れてください。</p>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+          <p class="submit_btn">
+            <input type="submit" value="送信" class="submit_btn">
+          </p>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ↓ここ以下も一緒 -->
+  <footer>
+    <div class="access">
+      <!-- 左側の要素 -->
+      <div class="left ds_f">
+        <div>
+          <ul>
+            <li>&#12306;879-5432</li>
+            <li>大分県由布市湯布院町川上1337</li>
+            <li>TEL　：000-0000-0000</li>
+            <li>MAIL：info@yaezaki.co.jp</li>
+            <li>(対応時間7:00 ～ 22:00まで)</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="sns ds_f">
+            <li><a href="#"><img src="../assets/images/common/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="../assets/images/common/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="../assets/images/common/twitter.png" alt="Twitter"></a></li>
+          </ul>
+        </div>
+        <div class="banner">
+          <a href="#"><img src="../assets/images/common/banner.jpg" alt="旅行サイトのバナー" width="220" height="75"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- コピーライト -->
+    <div class="copyright">
+      <small>
+        &copy;All Rights Reserved, oyado yaezaki Co.,Ltd
+      </small>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

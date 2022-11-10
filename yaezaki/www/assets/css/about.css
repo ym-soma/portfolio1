@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/* 紹介 */
+.about_text {
+  width: 100%;
+  padding: 400px 0;
+  text-align: center;
+  margin: 15% auto 20%;
+}
+
+.about_text h3 {
+  margin-bottom: 5%;
+}
+
+.about_text {
+  background-image: url(../images/about/about_ume.jpg), url(../images/about/about_ume_hana.jpg), url(../images/about/about_momiji.jpg), url(../images/about/about_frog.jpg);
+  background-repeat: no-repeat;
+  background-position: left 2% top 20%, right top 10%, left bottom 10%, right bottom 20%;
+}
+
+
+/* ガイド */
+main .guide_title p img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  object-position: 54% 0%;
+}
+
+
+main .guide_title h2 {
+  margin: auto;
+  margin-bottom: 15%;
+  position: relative;
+}
+
+main .guide_title h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  background-color: #333;
+  position: absolute;
+  bottom: -100px;
+  left: 18px;
+}
+
+main .guide h3 {
+  margin-bottom: 3%;
+}
+
+main .guide_content {
+  margin: 10%;
+  text-align: center;
+}
+
+main .guide_content_title {
+  margin-bottom: 5%;
+}
+
+main .inside_guide {
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+}
+
+main .inside_title img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+main .inside_guide ul {
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .inside_guide ul li {
+  width: 330px;
+  position: relative;
+  margin-bottom: 1%;
+  font-size: .8rem;
+}
+
+
+main .inside_guide ul li:nth-child(1)::before {
+  content: "1";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(2)::before {
+  content: "2";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(3)::before {
+  content: "3";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(4)::before {
+  content: "4";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(5)::before {
+  content: "5";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(6)::before {
+  content: "6";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(7)::before {
+  content: "7";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .inside_guide ul li:nth-child(8)::before {
+  content: "8";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+
+main .guide_text p {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+main .guide_content .map {
+  margin-bottom: 5%;
+}
+
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+
+  main .guide_content {
+    margin: 5%;
+    text-align: center;
+}
+
+  main .guide_text p {
+    width: 100%;
+  }
+  main .inside_guide ul li {
+    width: 150px;
+
+}
+
+  main .inside_guide ul li:nth-child(1)::before,
+  main .inside_guide ul li:nth-child(2)::before,
+  main .inside_guide ul li:nth-child(3)::before,
+  main .inside_guide ul li:nth-child(4)::before,
+  main .inside_guide ul li:nth-child(5)::before,
+  main .inside_guide ul li:nth-child(6)::before,
+  main .inside_guide ul li:nth-child(7)::before,
+  main .inside_guide ul li:nth-child(8)::before {
+    left: -22px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  main .inside_guide ul li:nth-child(1),
+  main .inside_guide ul li:nth-child(5),
+  main .inside_guide ul li:nth-child(3),
+  main .inside_guide ul li:nth-child(7) {
+    margin: 0 7% 0 2%;
+  }
+
+  .about_text {
+    background-image: url(../images/about/about_ume_hana.png), url(../images/about/about_momiji.png);
+    background-repeat: no-repeat;
+    background-position: right top 15%, left bottom 15%;
+  }
+
+  .about_text p {
+    width: 80%;
+    margin: auto;
+  }
+
+
+
+
+}

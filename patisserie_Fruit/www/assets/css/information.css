@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* ナビゲーション */
+header .pc .shop {
+    background-color: #96d3d0;
+}
+header .pc .shop a {
+    color: #fff;
+}
+
+body {
+    background-color: #f2eee7;
+}
+
+.slide {
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.slide ul img {
+    width: 800px;
+    height: 600px;
+}
+
+.res {
+    display: none;
+}
+
+main {
+    padding-bottom: 120px;
+    margin-bottom: 30px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 7px;
+    padding-top: 60px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.btn {
+    padding-top: 626px;
+}
+
+.border {
+    background-image: url(../images/common/border_brown.png);
+    background-repeat: repeat-x;
+    color: transparent;
+}
+
+.box1 {
+    width: 430px;
+    float: left;
+    clear: left;
+    margin-left: 160px;
+    margin-right: 0;
+}
+
+main dl {
+    line-height: 60px;
+}
+
+main dt {
+    float: left;
+    clear: left;
+    width: 100px;
+}
+
+main dd {
+    background-image: url(../images/information/small_border.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+main dt,
+main dd {
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.box1,
+.box2_pc {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.box2_phone {
+    display: none;
+}
+
+footer dt,
+footer dd {
+    background-image: none
+}
+
+@media screen and (max-width:640px) {
+
+    /* 要らないものを消す */
+    .slide,
+    .btn,
+    .slide_title {
+        display: none
+    }
+
+    main h1 {
+        padding-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .res {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .border {
+        margin-bottom: 50px;
+    }
+
+    .box1 {
+        width: 80%;
+        margin-bottom: 50px;
+        margin-left: 40px;
+    }
+
+
+    .box2_phone {
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .box2_pc {
+        display: none;
+    }
+    main dt{
+        width: 70px;
+    }
+    main dt,
+    main dd {
+        font-size: 13px;
+    }
+}

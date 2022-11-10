@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* タイトル */
+main .access h2 {
+  height: 100px;
+}
+
+
+/* アクセス */
+main .access {
+  margin: 10% 0 20%;
+}
+
+main .access_content {
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+main .access_content ul {
+  margin: 5% auto;
+}
+
+main .access_content li {
+  margin-bottom: 2%;
+}
+
+main .access_content li:nth-child(2) {
+  margin-bottom: 7%;
+}
+
+
+/* 問い合わせ */
+.inquiry {
+  width: 50%;
+  margin: auto;
+}
+
+.inquiry p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 50%;
+  border: 1px solid #ccc;
+  resize: none;
+  padding: 1% 2%;
+  margin-bottom: 5%;
+}
+
+select {
+  width: 30%;
+  border: 1px solid #ccc;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  resize: none;
+  padding: 1%;
+}
+
+.inquiry .submit_btn {
+  width: 20%;
+  margin: 5% auto;
+}
+
+.inquiry .submit_btn {
+  width: 50%;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 60%;
+  margin: auto;
+  background-color: #311c11;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding:5% 10%;
+  cursor: pointer;
+}
+
+
+.inquiry .inquiry_content {
+  margin: 30% 0;
+}
+
+
+.inquiry .alert{
+  font-weight: bold;
+  margin-top: 0%;
+  color: #f22b0a;
+  font-size: .8rem;
+}
+
+
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+
+  input[type="text"],
+  input[type="email"] {
+    width: 95%;
+  }
+
+  select {
+    width: 100%;
+    margin-bottom: 5;
+    border: 1px solid #ccc;
+    padding: 1%;
+  }
+
+  textarea {
+    width: 97%;
+    margin-bottom: 5;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 1%;
+  }
+
+  .inquiry {
+    width: auto;
+  }
+
+  .inquiry .inquiry_content {
+    margin: 30% auto;
+    width: 90%;
+  }
+
+  .inquiry .submit_btn {
+    width: 50%;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    width: 60%;
+    margin: auto;
+    background-color: #311c11;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding:5% 10%;
+    cursor: pointer;
+  }
+
+  /* Google Mapを囲う要素 */
+  .map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    /* 比率を4:3に固定 */
+  }
+
+  /* Google Mapのiframe */
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+}

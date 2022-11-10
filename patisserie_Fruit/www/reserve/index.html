@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reserve | patisserie Fruit</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/reserve.css">
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/reserve.js"></script>
+    <link rel="icon" href="../favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="wrapper ds_f jc_sb">
+                <!-- ↓ロゴ -->
+                <h1>
+                    <a href="../index.html">
+                        <img src="../assets/images/common/logo.png" alt="patisserie Fruit">
+                    </a>
+                </h1>
+
+                <!-- ↓ハンバーガーボタン -->
+                <button><img src="../assets/images/common/hamburger.png" alt="ハンバーガーボタン"></button>
+
+
+                <!-- headerの右側 -->
+                <div class="right">
+                    <!-- ↓snsのロゴたち -->
+                    <div class="sns ds_f">
+                        <p><a href="#"><img src="../assets/images/common/twitter.png" alt="twitter"></a></p>
+                        <p><a href="#"><img src="../assets/images/common/facebook.png" alt="facebook"></a></p>
+                        <p><a href="#"><img src="../assets/images/common/instagram.png" alt="instagram"></a></p>
+                    </div>
+
+                    <!-- ↓住所など -->
+                    <div class="addres">
+                        <p>TEL 03-1233-4566<br>
+                            東京都練馬区東大泉12-3(大泉学園駅より徒歩10分)
+                            <br>
+                            営業時間　10:00-19:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pc用のナビゲーション -->
+        <nav class="pc">
+            <p class="fadein_logo"><a href="../index.html"><img src="../assets/images/common/logo.png" alt="ロゴ"></a></p>
+
+            <ul class="ds_f">
+                <li class="home"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../menu/index.html">メニュー</a></li>
+                <li class="consept"><a href="../concept/index.html">コンセプト</a></li>
+                <li class="shop"><a href="../information/index.html">店舗情報</a></li>
+                <li class="news"><a href="../news/index.html">お知らせ</a></li>
+                <li class="reserved"><a href="../reserve/index.html">ご注文＆お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <!-- 携帯用のナビゲーション -->
+        <nav class="phone">
+            <ul>
+                <li class="home"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../menu/index.html">メニュー</a></li>
+                <li class="consept"><a href="../concept/index.html">コンセプト</a></li>
+                <li class="shop"><a href="../information/index.html">店舗情報</a></li>
+                <li class="news"><a href="../news/index.html">お知らせ</a></li>
+                <li class="reserved"><a href="../reserve/index.html">ご注文＆お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>ご注文</h1>
+        <p class="border">線</p>
+        <div class="box zoomIn">
+            <p class="cake"><img src="../assets/images/reserve/cake.png" alt="ケーキ"></p>
+        </div>
+        <div class="p_content1 fadein ds_f">
+            <p class="reserve_text">当店では、誕生日などの記念日にぴったりなデコレーションケーキのご予約も承っております。<br>
+                誕生日のチョコプレートやロウソクをお付けしますので、2日前までのご予約をお願いいたします<br>
+                また、ご要望があれば、オリジナルのデコレーションケーキのご予約も承っておりますので、お気軽にご連絡ください。<br>
+                ケーキを受け取るお客様の笑顔を思い浮かべ、心を込めてお作りします。</p>
+        </div>
+        <p class="border">線</p>
+        <h2>ご予約フォーム</h2>
+
+        <div class="vali">
+            <form action="form.php" method="post">
+
+                <div class="box1">
+                    <!-- 氏名 -->
+
+                    <!-- ひらがな -->
+                    <div class="textSection1">
+                        <div class="a">
+                            <p><label for="text_a">氏名</label></p>
+                            <p class="alert">お名前を入れてください。</p>
+                        </div>
+                        <div class="ds_f">
+                            姓<input type="text" id="text_a" name="text" value="" placeholder="山本">
+                            名<input type="text" id="text_b" name="text" value="" placeholder="恵那">
+                        </div>
+                    </div>
+
+                    <!-- カタカナ -->
+                    <div class="textSection2">
+                        <div class="a">
+                            <p><label for="text_c">氏名（カナ）</label></p>
+                            <p class="alert">お名前を入れてください。</p>
+                        </div>
+                        <div class="ds_f">
+                            姓<input type="text" id="text_c" name="text" value="" placeholder="ヤマモト">
+                            名<input type="text" id="text_d" name="text" value="" placeholder="エナ">
+                        </div>
+                    </div>
+
+                    <!-- メール -->
+                    <div class="textSection3">
+                        <div class="a">
+                            <p><label for="text_e">E-mail</label></p>
+                            <p class="alert">メールアドレスを入れてください。</p>
+                        </div>
+                        <input type="text" id="text_e" name="text" value="" placeholder="patisserie Fruit@icloud.com">
+                    </div>
+
+                    <!-- 電話番号 -->
+                    <div class="textSection4">
+                        <div class="a">
+                            <p><label for="text_f">電話番号</label></p>
+                            <p class="alert">お電話番号を入れてください。</p>
+                        </div>
+                        <input type="text" id="text_f" name="text" value="" placeholder="例：000-0000-0000">
+                    </div>
+
+                    <!-- 性別 -->
+                    <div class="radioSection">
+                        <div class="a">
+                            <p>性別</p>
+                            <p class="alert">選択してください。</p>
+                        </div>
+                        <input type="radio" id="radio1" name="radio" value="Radio1">
+                        <label for="radio1">男</label>
+                        <input type="radio" id="radio2" name="radio" value="Radio2">
+                        <label for="radio2">女</label>
+                    </div>
+
+                    <!-- 生年月日 -->
+                    <div class="textSection5">
+                        <div class="a">
+                            <p><label for="text_g">生年月日</label></p>
+                            <p class="alert">生年月日を入れてください。</p>
+                        </div>
+                        <input type="text" id="text_g" name="text" value="" placeholder="例：2000/01/01">
+                    </div>
+
+                    <!-- 種類 -->
+                    <div class="selectSection">
+                        <div class="a">
+                            <p>ケーキの種類</p>
+                            <p class="alert">ケーキの種類をご選択ください。</p>
+                        </div>
+
+                        <select>
+                            <option value="none">---</option>
+                            <option value="Select1">ショートケーキ 5号</option>
+                            <option value="Select2">ショートケーキ 6号</option>
+                            <option value="Select3">フルーツタルト</option>
+                            <option value="Select4">チョコケーキ</option>
+                            <option value="Select5">レアチーズケーキ</option>
+                            <option value="Select6">季節のフルーツタルト</option>
+                        </select>
+                    </div>
+
+                    <!-- 受け取り日 -->
+                    <div class="textSection6">
+                        <div class="a">
+                            <p><label for="text_u">お受取日</label></p>
+                            <p class="alert">お受取日を入れてください。</p>
+                        </div>
+                        <input type="text" id="text_u" name="text" value="" placeholder="例：2000/01/01">
+                    </div>
+
+                    <!-- ろうそくの本数 -->
+                    <div class="textSection_candle">
+                        <div class="a">
+                            <p><label for="text_candle">ロウソクの本数</label></p>
+                            <p class="alert">ロウソクの本数を入れてください。</p>
+                        </div>
+
+                        <input type="text" id="text_candle" name="text" value="" placeholder="1~5">本
+                    </div>
+
+                    <!---レートの要望-->
+                    <div class="textareaSection1">
+                        <div class="a">
+                            <p>
+                                <label for="plate">プレートメッセ－ジをご記入ください。</label>
+                            </p>
+                            <p class="alert">ご要望を入れてください。</p>
+                        </div>
+                        <textarea id="plate" name="text_plate" placeholder="例：happy birthday Ena !!"></textarea>
+                    </div>
+
+
+
+                    <!--ご要望-->
+                    <div class="textareaSection2">
+                        <div class="a">
+                            <p>
+                                <label for="want">その他ご要望をご記入ください。</label>
+                            </p>
+                            <p class="alert">ご要望を入れてください。</p>
+                        </div>
+                        <textarea id="want" name="text_want" placeholder="例：happy birthday Ena !!"></textarea>
+                    </div>
+
+                    <!-- ↓送信ボタン -->
+                    <input type="submit" value="送信する" class="submitBtn_1">
+
+                </div>
+            </form>
+        </div>
+
+
+        <p class="border">線</p>
+
+        <h2>お問い合わせ</h2>
+
+        <div class="vali">
+            <form action="form.php" method="post">
+
+                <div class="box2">
+
+                    <!-- ひらがな -->
+                    <div class="textSection10">
+                        <div class="a">
+                            <p><label for="text_j">氏名</label></p>
+                            <p class="alert">お名前を入れてください。</p>
+                        </div>
+                        <div class="ds_f">
+                            姓<input type="text" id="text_j" name="text" value="" placeholder="山本">
+                            名<input type="text" id="text_k" name="text" value="" placeholder="恵那">
+                        </div>
+                    </div>
+
+                    <!-- カタカナ -->
+                    <div class="textSection11">
+                        <div class="a">
+                            <p><label for="text_l">氏名（カナ）</label></p>
+                            <p class="alert">お名前を入れてください。</p>
+                        </div>
+                        <div class="ds_f">
+                            姓<input type="text" id="text_l" name="text" value="" placeholder="ヤマモト">
+                            名<input type="text" id="text_m" name="text" value="" placeholder="エナ">
+                        </div>
+
+                    </div>
+
+                    <!-- メール -->
+                    <div class="mailSection">
+                        <div class="a">
+                            <p><label for="mail">E-mail</label></p>
+                            <p class="alert">メールアドレスを入れてください。</p>
+                        </div>
+                        <input type="text" id="mail" name="text" value="" placeholder="例：patisserie Fruit@icloud.com">
+                    </div>
+
+                    <!-- 電話 -->
+                    <div class="tellSection">
+                        <div class="a">
+                            <p><label for="tell">電話番号</label></p>
+                            <p class="alert">お電話番号を入れてください。</p>
+                        </div>
+                        <input type="text" id="tell" name="text" value="" placeholder="例：000-0000-0000">
+                    </div>
+
+                    <!-- その他 -->
+
+                    <div class="textareaSection3">
+                        <div class="a">
+                            <p>
+                                <label for="textarea3">その他ご要望をご記入ください。</label>
+                            </p>
+                            <p class="alert">ご要望を入れてください。</p>
+                        </div>
+                        <textarea id="textarea3" name="want_02" placeholder="例：happy birthday Ena !!"></textarea>
+                    </div>
+
+                    <!-- ↓送信ボタン -->
+                    <input type="submit" value="送信する" class="submitBtn_2">
+                </div>
+            </form>
+        </div>
+
+        <!-- ↓TOTOPボタン -->
+        <p class="totop"><a href="#">&uarr;</a></p>
+    </main>
+
+    <footer>
+        <div class="wrapper ds_f jc_sb">
+            <nav class="f_nav ds_f">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../menu/index.html">メニュー</a></li>
+                    <li><a href="../concept/index.html">コンセプト</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../information/index.html">店舗情報</a></li>
+                    <li><a href="../news/index.html">お知らせ</a></li>
+                    <li><a href="#">ご注文＆お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="f_shop">
+                <div class="ds_f">
+                    <p class="f_logo"><img src="../assets/images/common/logo.png" alt="フッター店舗ロゴ">
+                    </p>
+                    <p class="f_address">〒178-0063東京都練馬区東大泉12-3<br>TEL 03-1233-4566<br>大泉学園駅より徒歩１０分</p>
+                </div>
+                <dl>
+                    <dt>営業時間</dt>
+                    <dd>10:00-19:00</dd>
+                    <dt>定休日</dt>
+                    <dd>毎週火曜日、水曜日</dd>
+                </dl>
+            </div>
+        </div>
+        <p class="wrapper"><small class="copyright">copyright2022 &copy; PatisserieFruit all rights
+                reserved.</small></p>
+
+    </footer>

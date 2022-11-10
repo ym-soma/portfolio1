@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+/* ナビゲーション */
+header .pc .consept {
+    background-color: #f6d370;
+}
+
+header .pc .consept a {
+    color: #fff;
+}
+
+/*社長あいさつ*/
+main .greeting {
+    background-image: url(../images/concept/line_bg.png);
+    background-repeat: repeat-x;
+    margin-top: 40px;
+}
+
+.greeting .ceo_photo {
+    padding-top: 145px;
+    padding-left: 170px;
+    margin-right: 67px;
+}
+
+.greeting .g_textbox h2 {
+    margin-top: 60px;
+    width: 570px;
+    text-align: center;
+    color: #42210b;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.8;
+    letter-spacing: 0.2em;
+}
+
+.greeting .g_textbox h2 .second_p {
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    font-size: 18px;
+}
+
+.greeting .g_textbox h2 .third_p {
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.greeting .g_textbox .g_text {
+    background-image: url(../images/concept/greeting_bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 576px;
+    height: 421px;
+    margin-right: 150px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: .1em;
+}
+
+.greeting .g_textbox .g_text .career {
+    padding-top: 15px;
+}
+
+.greeting .g_textbox .g_text dt {
+    float: left;
+    clear: left;
+    width: 72px;
+}
+
+.greeting .g_textbox .g_text dd {
+    margin-left: 72px;
+}
+
+/*コンセプト*/
+.concept_title_pc {
+    text-align: right;
+}
+
+.concept_title_sp {
+    display: none;
+}
+
+main .concept {
+    background-color: #F2EEE7;
+    background-image: url(../images/concept/line_bg.png);
+    background-repeat: repeat-x;
+    background-position: top 700px;
+
+}
+
+main .concept_c {
+    background-color: #F2EEE7;
+    margin-top: 85px;
+    height: 700px;
+    position: relative;
+}
+
+main .concept_c .wrapper {
+    position: relative;
+}
+
+main .concept_c .orange {
+    position: absolute;
+    top: -80px;
+    left: 40px;
+}
+
+main .concept_c .grape {
+    position: absolute;
+    bottom: -250px;
+    right: 20px;
+}
+
+main .center_line {
+    display: block;
+    height: 13px;
+    margin-top: 20px;
+    background-image: url(../images/concept/line_bg.png);
+    background-repeat: repeat-x;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+}
+
+main .concept_f {
+    background-color: #F2EEE7;
+    margin-bottom: 200px;
+    height: 700px;
+    margin-top: 20px;
+}
+
+main .concept_f .wrapper {
+    position: relative;
+}
+
+main .concept_f .cherry {
+    position: absolute;
+    left: 30px;
+    bottom: -250px;
+}
+
+main .concept_text {
+    padding-top: 115px;
+}
+
+main .concept_c .concept_text {
+    padding-left: 120px;
+}
+
+main .concept_f .concept_text {
+    padding-right: 120px;
+}
+
+main .concept_text h5 {
+    color: #42210b;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: .1em;
+}
+
+main .concept_text h5 span {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+}
+
+main .concept_text h6 {
+    background-image: url(../images/concept/cake_icon.png);
+    height: 46px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: #42210b;
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding-left: 50px;
+}
+
+main .concept_text p {
+    background-image: url(../images/concept/concept_bg.png);
+    background-repeat: no-repeat;
+    width: 465px;
+    height: 270px;
+    padding-top: 50px;
+    padding-left: 25px;
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    line-height: 2;
+    color: #333;
+}
+
+main .concept_c .photo1 {
+    padding-top: 75px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+main .concept_f .photo2 {
+    padding-top: 75px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+
+/* totop */
+.totop {
+    bottom: -150px;
+}
+
+.fadein_concept {
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-property: opacity, transform;
+}
+
+.fadeIn-up {
+    transform: translate(0, 50px);
+}
+
+.scrollIn {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+    /*いらないもの*/
+    .concept_c .orange,
+    .concept_c .grape,
+    .concept_f .cherry,
+    .concept_title_pc {
+        display: none;
+    }
+
+
+    /*width,height解除*/
+    .greeting .g_textbox h2 {
+        width: 100%;
+    }
+
+    .greeting .g_textbox .g_text {
+        width: 100%;
+    }
+
+    main .concept_c {
+        height: auto;
+    }
+
+    main .concept_f {
+        height: auto;
+    }
+
+    main .concept_text p {
+        width: 100%;
+    }
+
+    /*幅、余白調整*/
+    main .concept_c .concept_text {
+        padding-left: 0;
+    }
+
+    main .concept_text p {
+        padding-left: 0;
+    }
+
+    /*社長挨拶*/
+    .greeting .ceo_photo {
+        padding: 70px 50px 0;
+        margin-right: 0;
+    }
+
+    .greeting .g_textbox .g_text {
+        background-size: 95%;
+        background-position: top;
+        padding-top: 20px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 11px;
+        height: 300px;
+    }
+
+    .greeting .g_textbox .g_text p {
+        letter-spacing: 0;
+        margin-left: 20px;
+    }
+
+    .greeting .g_textbox .g_text dl {
+        margin-left: 20px;
+    }
+
+    /*コンセプト地域協力*/
+    main .concept_c {
+        margin-top: 10px;
+    }
+
+    main .concept_c .concept_text {
+        padding-top: 30px;
+
+    }
+
+    main .concept_text h5 {
+        font-size: 30px;
+        margin-left: 30px;
+        letter-spacing: 0;
+
+    }
+
+    main .concept_text h5 span {
+        font-size: 17px;
+    }
+
+    main .concept_text h6 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+
+    }
+
+    main .concept_text p {
+        background-size: 95%;
+        background-position: top left 15px;
+        font-size: 12px;
+        padding-top: 40px;
+        margin: auto;
+        text-align: center;
+    }
+
+    main .concept_c .photo1 {
+        padding: 0;
+        margin: 0 30px 50px;
+    }
+
+    /*コンセプト鮮度へのこだわり*/
+    main .concept_f .photo2 {
+        padding: 0;
+        margin: 50px 30px 0;
+    }
+
+    main .concept_f .concept_text {
+        padding-right: 0;
+        padding-top: 30px;
+        padding-bottom: 120px;
+    }
+
+    main .concept_f .concept_text p {
+        text-align: center;
+    }
+
+    main .concept_f {
+        margin-bottom: 0;
+    }
+
+    /*スマホ用コンセプトタイトル*/
+    .concept_title_sp {
+        display: block;
+        font-size: 30px;
+        color: #42210b;
+        text-align: center;
+        font-weight: normal;
+        background-image: url(../images/concept/line_bg.png);
+        background-repeat: repeat-x;
+        background-position: bottom;
+        padding-bottom: 20px;
+    }
+
+    .concept_title_sp span {
+        font-size: 16px;
+    }
+
+    .totop {
+        bottom: 60px;
+    }
+}

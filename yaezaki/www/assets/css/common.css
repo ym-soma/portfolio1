@@ -1,0 +1,507 @@
+@charset "UTF-8";
+
+/* リセット */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+p,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 横並び */
+.ds_f {
+  display: flex;
+}
+
+/* 縦書き */
+.vertical {
+  writing-mode: vertical-rl;
+}
+
+.text-combine {
+  -webkit-text-combine: horizontal;
+  -ms-text-combine-horizontal: all;
+  text-combine-upright: all;
+}
+
+.wrapper {
+  max-width: 1090px;
+  margin: auto;
+}
+
+/* 全体設定 */
+body {
+  font-family: "Times New Roman", Times, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Sawarabi Mincho", "游明朝体", "Yu Mincho", YuMincho, "HG明朝B", serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+/* body */
+.totop {
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  z-index: 99999;
+}
+
+.totop .vertical {
+  line-height: 57px;
+}
+
+
+
+/* パンくず */
+.bread {
+  margin: 2%;
+}
+
+.bread ul li {
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.bread ul li:first-child::after {
+  content: "－";
+  color: #000;
+  /* margin-left: 5%; */
+  position: absolute;
+  left: 110%;
+  top: 0;
+}
+
+.bread ul li:last-child {
+  line-height: 25px;
+}
+
+.bread ul li:hover {
+  text-decoration: underline;
+}
+
+
+/* header */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 100vh;
+  margin: auto;
+  background-image: url(../images/common/washi.png);
+}
+
+/* タイトル */
+header .title {
+  margin: 20% 0 10%;
+}
+
+main .res_title {
+  display: none;
+}
+
+
+header .title h1 {
+  padding-left: 5px;
+  margin: 5%;
+}
+
+header .title .vertical {
+  margin: auto;
+  font-size: 2rem;
+  width: 18%;
+  line-height: 2rem;
+}
+
+header .title p:nth-child(3) {
+  margin: 10% 0;
+}
+
+/* ナビゲーション */
+.nav {
+  position: fixed;
+  bottom: 10%;
+  display: block;
+}
+
+.nav ul a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 0;
+  padding-left: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*ホバーエフェクト*/
+.nav ul a::after {
+  /*アンダーラインのスタイル*/
+  position: absolute;
+  bottom: 0;
+  left: 14%;
+  content: "";
+  display: block;
+  width: 12%;
+  height: 1px;
+  background-color: #9e9e9e;
+
+  /*横方向0で非表示にする*/
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+
+  /*中央を基点にアニメーション*/
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+
+  /*アニメーションの速度設定*/
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.nav ul a:hover::after {
+  /*横方向等倍まで拡大*/
+  transform: scale(1, 1);
+}
+
+
+.color {
+  color: #ff6348;
+  font-weight: bold;
+  position: relative;
+}
+
+
+
+/* 空席確認ボタン */
+.reserve {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 190px;
+}
+
+.reserve a {
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background-color: #2f1c11;
+  color: #fff;
+}
+
+
+/* main */
+main {
+  width: calc(100% - 190px);
+  margin-left: 190px;
+  position: relative;
+}
+
+
+
+/* よくある質問 */
+.question {
+  width: 65%;
+  margin: auto;
+}
+
+.question dl {
+  width: 100%;
+  margin: 20% auto;
+}
+
+.question dt {
+  margin-bottom: 1%;
+
+}
+
+.question dt::before {
+  content: "Q";
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+.question dd {
+  margin-bottom: 5%;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+.question dd::before {
+  content: "A";
+  font-size: 1.5rem;
+  color: #F22B0A;
+  padding: 1%;
+}
+
+/* タイトル */
+main .main_title {
+  max-height: 900px;
+}
+
+main .main_title h2,
+main .inside_title h2,
+main .question_title h2 {
+  margin: 15% auto;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+main .main_title h2::after,
+main .inside_title h2::after,
+main .question_title h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100px;
+  background-color: #333;
+  position: absolute;
+  bottom: -110px;
+}
+
+main .main_title p {
+  justify-content: end;
+  display: flex;
+}
+
+main .main_title p img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+/* ↓下層ページここは同じ */
+/* footer */
+footer {
+  padding-top: .5%;
+  width: calc(100% - 190px);
+  margin-left: 190px;
+  background-color: #eee;
+}
+
+footer .access {
+  padding: 5% 10%;
+}
+
+footer .left {
+  align-items: flex-end;
+}
+
+footer .left div {
+  width: 25%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+footer .left .banner {
+  margin-bottom: 1.5%;
+}
+
+footer .copyright {
+  background-color: #262626;
+  height: 50px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: .2rem;
+}
+
+
+footer .left .sns {
+  justify-content: center;
+}
+
+footer .left .sns li {
+  margin-right: 7%;
+  line-height: 3rem;
+}
+
+footer .left .sns li img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+  /* 定型文 */
+  .wrapper {
+    width: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 横並び解除 */
+  .ds_f {
+    display: block;
+  }
+
+  header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-image: none;
+    z-index: 99999999;
+  }
+
+  header .title {
+    display: none;
+  }
+
+  header .nav {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 100vh;
+    padding-top: 20%;
+  }
+
+  .reserve {
+    width: 100%;
+    z-index: 999999999;
+  }
+
+  header .nav a {
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    padding: 0;
+  }
+
+  header .nav li {
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    font-weight: bold;
+    background-color: #fff;
+    width: 100%;
+
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 4%;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+
+  /* その他 */
+  .nav ul a::after {
+    display: none;
+  }
+
+  /* メイン */
+  main,
+  footer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  main .main_title h2,
+  main .inside_title h2,
+  main .question_title h2 {
+    margin: 25% auto 37%;
+  }
+
+  .question {
+    width: 86%;
+  }
+
+  /* フッター */
+  footer .access {
+    padding: 5% 5%;
+    min-height: 200px;
+  }
+
+  footer .access address {
+    font-size: 1.2rem;
+  }
+
+  footer .left div {
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .left div:first-child {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  footer .left .sns {
+    display: flex;
+    padding-top: 3%;
+  }
+
+  footer .left .sns li {
+    width: 3.5rem;
+    margin-right: 0;
+  }
+
+  footer .left .banner {
+    width: 65%;
+    margin: 5% auto;
+  }
+
+  footer .left .banner a {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .totop {
+    right: 3%;
+    bottom: 10%;
+  }
+}

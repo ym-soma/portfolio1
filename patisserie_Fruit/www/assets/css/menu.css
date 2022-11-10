@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+/* ナビゲーション */
+header .pc .menu {
+    background-color: #f78083;
+}
+
+header .pc .menu a {
+    color: #fff;
+}
+
+/* メイン */
+main {
+    background-color: #F2EEE7;
+}
+
+main h1 {
+    font-size: 40px;
+    color: #42210b;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    letter-spacing: 0.2em;
+
+}
+
+/*メニュー各セクション見出しパート*/
+main h2 {
+    font-size: 28px;
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #42210b;
+}
+
+main .detail {
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    text-align: center;
+    color: #42210b;
+}
+
+main .menu_text1 {
+    background-image: url(../images/menu/content1_bg.png);
+    background-repeat: no-repeat;
+    background-position: right 350px bottom;
+    height: 150px;
+}
+
+main .menu_text2 {
+    background-image: url(../images/menu/content2_bg.png);
+    background-repeat: no-repeat;
+    background-position: top 60px left 350px;
+    height: 150px;
+    padding-top: 60px;
+}
+
+main .menu_text3 {
+    background-image: url(../images/menu/content3_bg1.png), url(../images/menu/content3_bg2.png);
+    background-repeat: no-repeat;
+    background-position: right 400px top 60px, right 350px bottom;
+    height: 150px;
+    padding-top: 60px;
+}
+
+
+main .menu_text4 {
+    background-image: url(../images/menu/content4_bg.png);
+    background-repeat: no-repeat;
+    background-position: left 250px bottom;
+    height: 150px;
+    padding-top: 60px;
+}
+
+/*メニュー各セクション画像パート*/
+/*タルト*/
+main .tarto {
+    padding-bottom: 96px;
+}
+
+main .tarto_list {
+    padding: 50px 30px 0;
+}
+
+main .menu_list li {
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    color: #42210b;
+    font-size: 21px;
+    text-align: center;
+}
+
+/* アレルギー表記 */
+main .menu_list .allergy {
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding-top: 20px;
+}
+
+/*全プライス税込み表記*/
+main .menu_list .price span {
+    font-size: 16px;
+}
+
+/*ケーキ*/
+main .cake {
+    background-image: url(../images/common/border_brown.png);
+    background-repeat: repeat-x;
+    padding-bottom: 30px;
+
+}
+
+
+main .cake_list {
+    padding-top: 60px;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+main .cake_list>li {
+    padding: 0 30px 30px;
+}
+
+/*焼き菓子*/
+
+main .baked {
+    background-image: url(../images/common/border_brown.png);
+    background-repeat: repeat-x;
+    height: 825px;
+}
+
+main .baked_menu ul {
+    margin: auto;
+}
+
+main .baked_photo {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+main .baked ul {
+    width: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .baked ul li {
+    color: #42210b;
+    font-size: 21px;
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+}
+
+/*ジャム*/
+main .jam {
+    background-image: url(../images/common/border_brown.png);
+    background-repeat: repeat-x;
+    height: 750px;
+    padding-bottom: 20px;
+}
+
+
+main .jam_menu ul {
+    justify-content: center;
+}
+
+main .jam_photo {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+main .jam ul li {
+    color: #42210b;
+    font-size: 21px;
+    font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+    letter-spacing: 0.15em;
+}
+
+/*footer*/
+footer {
+    margin-top: 0;
+}
+
+/*一番上のメニューのフェードイン*/
+.start_menu {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+
+    /*段組み解除*/
+    main .cake_list {
+        flex-direction: column;
+    }
+
+    /*width指定解除*/
+    main .cake_list {
+        width: 100%;
+    }
+
+    main .baked ul {
+        width: 100%;
+    }
+
+    /*余白,サイズ調整*/
+    main h1 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    main h2 {
+        font-size: 18px;
+    }
+
+    main .detail {
+        font-size: 12px;
+        width: 90%;
+        margin: auto;
+    }
+
+    /*タルトセクション*/
+    main .menu_text1 {
+        background-position: right 20px bottom 20px;
+        background-size: 20%;
+        height: 110px;
+    }
+
+    main .tarto_list {
+        padding-top: 0;
+        padding-left: 35px;
+    }
+
+    main .tarto_list li {
+        margin: auto;
+    }
+
+
+    main .menu_list li {
+        font-size: 16px;
+    }
+
+    main .menu_list .allergy {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    main .tarto {
+        padding-bottom: 30px;
+    }
+
+    /*ケーキセクション*/
+    main .menu_text2 {
+        height: 110px;
+        background-position: top 90px left 20px;
+        background-size: 30%;
+    }
+
+    main .cake_list {
+        padding-top: 30px;
+    }
+
+    main .cake_list>li {
+        padding: 0;
+        margin: auto;
+    }
+
+    /*焼き菓子セクション*/
+    main .menu_text3 {
+        background-position: right 30px top 60px, right 20px bottom 20px;
+        background-size: 20%, 10%;
+        height: 110px;
+
+    }
+
+    main .baked_photo {
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    main .baked ul li {
+        font-size: 14px;
+    }
+
+    main .baked_menu ul {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    main .baked {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    /*ジャムセクション*/
+    main .menu_text4 {
+        background-position: left 10px bottom 30px;
+        background-size: 30%;
+    }
+
+    main .jam_photo {
+        padding-top: 0;
+        width: 85%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    main .jam_menu ul {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+    }
+
+    main .jam ul li {
+        font-size: 12px;
+    }
+
+    main .jam {
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+
+}
