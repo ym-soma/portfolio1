@@ -856,11 +856,12 @@ footer small {
   }
 
   .logo img {
-    width: 25%;
+    width: 50%;
   }
 
   header {
     margin-bottom: 0;
+    height: auto;
   }
 
   header .top {
@@ -871,8 +872,8 @@ footer small {
   header .mv {
     height: auto;
     width: 100%;
-    margin-bottom: 0;
-
+    margin-top: 10.875rem;
+    margin-bottom: 3rem;
   }
 
   header .mv::before {
@@ -887,7 +888,7 @@ footer small {
 
   header .mv1 {
     left: 5%;
-    top: 0;
+    top: 7%;
   }
 
   header .mv1 img {
@@ -907,7 +908,7 @@ footer small {
   }
 
   header .mv3 {
-    bottom: 10%;
+    bottom: 20%;
     width: 60%;
     right: 5%;
   }
@@ -926,7 +927,7 @@ footer small {
   header .catch {
     position: absolute;
     right: 5%;
-    top: 40%;
+    top: 38%;
     font-size: 1.6rem;
   }
 
@@ -1076,6 +1077,9 @@ footer small {
 
 
   /* スタイル */
+  #style {
+    margin-bottom: 12.875rem;
+  }
 
   #style .sub_title {
     margin-left: 5%;
