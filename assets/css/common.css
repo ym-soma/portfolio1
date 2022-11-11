@@ -82,13 +82,14 @@ h3 {
 main h1 {
   text-align: center;
   margin: 38vh auto 65vh;
-  font-size: 20vh;
-  line-height: 17vh;
-
-  font-family: "Bio Sans", sans-serif;
-  color: #ff5a00;
-  text-shadow: -15px 0 0 #000;
   z-index: -1;
+  background-image: url(../images/top/title_bg.png);
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-position: 48.5%;
+}
+main h1 img{
+  width: 30vw;
 }
 
 /* スクロールバー */
