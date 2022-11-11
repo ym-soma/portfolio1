@@ -240,7 +240,7 @@ main .guide_content .map {
   }
 
   .about_text {
-    background-image: url(../images/about/about_ume_hana.png), url(../images/about/about_momiji.png);
+    background-image: url(../images/about/about_ume_hana.jpg), url(../images/about/about_momiji.jpg);
     background-repeat: no-repeat;
     background-position: right top 15%, left bottom 15%;
   }

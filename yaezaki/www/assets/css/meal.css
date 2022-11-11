@@ -332,7 +332,7 @@ main .meal_text h3 {
   /* 逸品 */
   .meal_reco {
     position: initial;
-    min-height: 210rem;
+    min-height: 180rem;
     box-sizing: border-box;
   }
 
