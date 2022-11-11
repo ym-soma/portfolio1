@@ -62,7 +62,7 @@ body {
   background-attachment: scroll;
   position: relative;
   z-index: -1;
-  font-family: "メイリオ", "Meiryo","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "メイリオ", "Meiryo", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
 
 }
 
@@ -88,7 +88,8 @@ main h1 {
   background-repeat: no-repeat;
   background-position: 48.5%;
 }
-main h1 img{
+
+main h1 img {
   width: 30vw;
 }
 
@@ -534,12 +535,11 @@ main .arrival:after {
 
   /* タイトル */
   main h1 {
-    font-size: 15vw;
-    text-shadow: -8px 0 0 #000;
-    line-height: normal;
-    top: 1vh;
-    right: unset;
-    left: 15vw;
+    background-position: 49%;
+  }
+
+  main h1 img {
+    margin-bottom: 3px;
   }
 
   /* ナビ */

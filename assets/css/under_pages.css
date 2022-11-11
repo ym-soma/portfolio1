@@ -99,7 +99,8 @@ main h1 {
   background-position: 53.3%;
   vertical-align: bottom;
 }
-main h1 img{
+
+main h1 img {
   width: 18vw;
   margin-bottom: 4px;
 }
@@ -309,12 +310,14 @@ main .commentary_area .plan dd {
 }
 
 /* 文章エリア_難しかったところ */
-main .commentary_area .difficult_point dt{
+main .commentary_area .difficult_point dt {
   font-weight: bold;
 }
+
 main .commentary_area .difficult_point dt::before {
   content: "・";
 }
+
 main .commentary_area .difficult_point dd {
   margin-bottom: 2.5vh;
 }
@@ -351,7 +354,14 @@ main .commentary_area .difficult_point dd {
 
   /* タイトル */
   main h1 {
-    margin-bottom: 5vh;
+    background-size: 25vw;
+    background-position: 53%;
+    margin: 40vh auto 5vh;
+  }
+
+  main h1 img {
+    width: 25vw;
+    margin-bottom: 4px;
   }
 
   main h2 {
