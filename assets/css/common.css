@@ -81,12 +81,7 @@ main h1 {
   text-align: center;
   margin: 38vh auto 65vh;
   z-index: -1;
-  background-image: url(../images/top/title_bg.png);
-  background-size: 30vw;
-  background-repeat: no-repeat;
-  background-position: 48.5%;
 }
-
 main h1 img {
   width: 30vw;
 }
@@ -529,15 +524,6 @@ main .arrival:after {
     margin-bottom: 2vh;
     line-height: 1rem;
     font-weight: 100;
-  }
-
-  /* タイトル */
-  main h1 {
-    background-position: 49%;
-  }
-
-  main h1 img {
-    margin-bottom: 10px;
   }
 
   /* ナビ */

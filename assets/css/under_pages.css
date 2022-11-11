@@ -93,16 +93,10 @@
 main h1 {
   margin: 30vh auto 10vh;
   padding-left: 5vw;
-  background-image: url(../images/common/work_bg.png);
-  background-size: 18vw;
-  background-repeat: no-repeat;
-  background-position: 53.3%;
-  vertical-align: bottom;
 }
 
 main h1 img {
   width: 18vw;
-  margin-bottom: 3px;
 }
 
 main h2 {
@@ -354,14 +348,11 @@ main .commentary_area .difficult_point dd {
 
   /* タイトル */
   main h1 {
-    background-size: 25vw;
-    background-position: 53%;
     margin: 40vh auto 5vh;
   }
 
   main h1 img {
     width: 25vw;
-    margin-bottom: 7px;
   }
 
   main h2 {

@@ -150,7 +150,7 @@ header .mv {
   position: relative;
   min-height: 43.75rem;
   margin: 15.875rem auto 7.875rem;
-  width: 1366px;
+  max-width: 1366px;
 }
 
 header .mv::before {
@@ -1197,6 +1197,10 @@ footer small {
     width: 80%;
   }
 
+  #stylist ul .satou div {
+    margin-left: 0;
+  }
+
   #stylist ul li p:last-child {
     margin-bottom: 0;
   }
@@ -1236,6 +1240,14 @@ footer small {
     margin: 0 10%;
   }
 
+  footer .left dt {
+    font-size: .8rem;
+  }
+
+  footer dd {
+    font-size: 0.7rem;
+  }
+
   footer .rest {
     margin-left: auto;
   }
@@ -1252,6 +1264,7 @@ footer small {
     margin: auto 20%;
     margin-bottom: 5%;
     width: 60%;
+    font-size: .7rem;
   }
 
   /* Google Mapを囲う要素 */
