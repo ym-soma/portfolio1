@@ -55,13 +55,14 @@ a {
 
 
 /* 全体 */
-body {
+html{
   background-image: url(../images/common/left_bg.png);
   background-repeat: repeat-y;
-  position: relative;
-  z-index: -1;
-  font-family: "メイリオ", "Meiryo", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+}
 
+body {
+  font-family: "メイリオ", "Meiryo", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+  position: relative;
 }
 
 h2 {
@@ -80,7 +81,6 @@ h3 {
 main h1 {
   text-align: center;
   margin: 38vh auto 65vh;
-  z-index: -1;
 }
 main h1 img {
   width: 30vw;
@@ -89,7 +89,6 @@ main h1 img {
 /* スクロールバー */
 main {
   position: relative;
-  z-index: -1;
 }
 
 main .scroll {
@@ -122,7 +121,7 @@ main .scroll span {
   left: -20px;
   top: -30px;
   /*テキストの形状*/
-  color: #00473e;
+  color: #000;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
   writing-mode: vertical-rl;
@@ -257,7 +256,7 @@ main .scroll:after {
 .open {
   display: block;
   position: fixed;
-  z-index: 999;
+  z-index: 99999;
   top: 190px;
   width: 100%;
   height: 100vh;
@@ -330,11 +329,13 @@ main .scroll:after {
   left: -50px;
   top: -50px;
   transition: all .5s;
+  z-index: 9999;
 }
 
 .huberger_bg {
   transform: scale(50);
   transition: all .5s;
+  z-index: 9999;
 }
 
 
