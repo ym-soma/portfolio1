@@ -57,9 +57,7 @@ a {
 /* 全体 */
 body {
   background-image: url(../images/common/left_bg.png);
-  background-position: left 10%;
   background-repeat: repeat-y;
-  background-attachment: scroll;
   position: relative;
   z-index: -1;
   font-family: "メイリオ", "Meiryo", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;

@@ -59,7 +59,7 @@ $(function() {
 
   //スクロールしてトップへ戻る
   btn.on('click',function () {
-    $('body,html').animate({
+    $('html').animate({
       scrollTop: 0
     });
   });
