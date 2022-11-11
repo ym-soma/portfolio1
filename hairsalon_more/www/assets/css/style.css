@@ -1146,7 +1146,7 @@ footer small {
 
   #style .instagram a {
     bottom: 7%;
-    left: 60%;
+    left: 65%;
     right: unset;
     width: 25%;
     height: auto;
@@ -1203,15 +1203,13 @@ footer small {
 
   #stylist .title_top {
     width: 50%;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: auto;
-
   }
 
   #stylist .title_bottom {
-    width: 50%;
-    margin-right: 5%;
-    margin-left: auto;
+    opacity: 0;
+    padding-top: 0;
   }
 
   #stylist .title_top img,
