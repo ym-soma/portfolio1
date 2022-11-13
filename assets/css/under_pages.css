@@ -21,6 +21,7 @@
   position: fixed;
   top: 100px;
   left: 79px;
+  z-index: 99999;
   opacity: 0;
   animation: anime ease-out .3s normal forwards;
 }
