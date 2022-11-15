@@ -64,13 +64,14 @@ main .catch {
   z-index: 99999;
 }
 
-main .catch h2 {
+main .catch p {
   position: relative;
   height: 600px;
   width: 110px;
+  font-weight: bolder;
 }
 
-main .catch h2 .right {
+main .catch .right {
   position: absolute;
   right: 0;
   top: 0;
@@ -529,7 +530,7 @@ footer .left .sns li img {
 
 footer .copyright {
   background-color: #262626;
-  height: 50px;
+  height: 57.5px;
   text-align: center;
   line-height: 48px;
   color: #fff;
@@ -557,25 +558,10 @@ footer .copyright {
   }
 
 
+  /* タイトル */
   .concept .title {
     font-size: 1.8rem;
   }
-
-  main .catch {
-    top: 5%;
-    left: 10%;
-  }
-
-  .catch span {
-    font-size: 1.5rem;
-  }
-
-  main .catch h2 {
-    position: relative;
-    height: 460px;
-    width: 110px;
-  }
-
 
   main .res_title {
     display: block;
@@ -585,12 +571,13 @@ footer .copyright {
     right: 43%;
   }
 
-  main .res_title p:nth-child(2) {
+  main .res_title h1 {
     color: #fff;
     width: 1.8rem;
     margin: auto;
     line-height: 2rem;
     font-size: 2.6rem;
+    font-weight: normal;
   }
 
   main .res_title p:nth-child(3) {
@@ -600,10 +587,30 @@ footer .copyright {
     line-height: 2rem;
   }
 
-  main .res_title h1 {
+  main .res_title p:nth-child(1) {
     margin-bottom: 10%;
   }
 
+/* キャッチコピー */
+  main .catch {
+    top: 5%;
+    left: 10%;
+  }
+
+  .catch span {
+    font-size: 1.5rem;
+  }
+  main .catch p {
+    height: 460px;
+    width: 110px;
+  }
+  main .catch .left{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* コンセプト */
   .concept .text {
     height: 26%;
     font-size: 1rem;
