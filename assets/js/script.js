@@ -36,21 +36,21 @@ $(function () {
 
 $(function() {
   // 変数にクラスを入れる
-  var btn = $('.totop');
+  var top = $('.totop');
   var bread = $('.crumb');
 
   //スクロールしてページトップから500に達したらボタンを表示
   $(window).on('load scroll', function(){
     if($(this).scrollTop() > 500) {
-      btn.addClass('arrival');
+      top.addClass('arrival');
     }else{
-      btn.removeClass('arrival');
+      top.removeClass('arrival');
     }
   });
   
-  //スクロールしてページトップから100に達したらボタンを表示
+  //スクロールしてページトップから100に達したらボタンを消す
   $(window).on('load scroll', function(){
-    if($(this).scrollTop() > 200) {
+    if($(this).scrollTop() > 100) {
       bread.addClass('none');
     }else{
       bread.removeClass('none');

@@ -24,6 +24,7 @@
   z-index: 9998;
   opacity: 0;
   animation: anime ease-out .3s normal forwards;
+  font-size: .9rem;
 }
 
 @keyframes anime {
