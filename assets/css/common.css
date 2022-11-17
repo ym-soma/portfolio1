@@ -78,11 +78,11 @@ h3 {
 
 
 /* main_title */
-main h1 {
+main .title {
   text-align: center;
   margin: 38vh auto 65vh;
 }
-main h1 img {
+main .title img {
   width: 30vw;
 }
 

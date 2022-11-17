@@ -92,47 +92,51 @@
 /* タイトル */
 
 /* main_title */
-main h1 {
+main .title {
   margin: 30vh auto 10vh;
   padding-left: 5vw;
 }
 
-main h1 img {
+main .title img {
   width: 18vw;
 }
 
-main h2 {
+main h1 {
   padding-left: 6vw;
   font-size: 1.7rem;
   line-height: 1.7rem;
+  text-align: center;
 }
 
-main h2 br {
+main h1 br {
   display: none;
 }
 
-main h3 {
+main .link {
   font-size: .9em;
   padding-left: 4vw;
+  margin-bottom: 10vh;
 }
 
-main h3 a {
+main .link a {
   padding: 1.5vh 1vw;
   display: block;
   width: 10vw;
   margin: 4.5vh auto;
   position: relative;
   transition: .5s;
+  text-align: center;
+  font-weight: bold;
 }
 
-main h3 a:hover {
+main .link a:hover {
   letter-spacing: 2px;
   transition: .5s;
   background-color: #FF9800;
   color: #fff;
 }
 
-main h3 a:hover:before {
+main .link a:hover:before {
   content: "";
   position: absolute;
   top: 0;
@@ -159,7 +163,7 @@ main h3 a:hover:before {
 
 }
 
-main h3 a:hover:after {
+main .link a:hover:after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -186,13 +190,14 @@ main h3 a:hover:after {
 
 }
 
-main h4 {
+main h2 {
   background-color: #214098;
   height: 30px;
   text-align: center;
   line-height: 33px;
   color: #fff;
   font-weight: normal;
+  font-size: 1rem;
   letter-spacing: 1px;
   margin-bottom: 3vh;
 }
@@ -349,11 +354,11 @@ main .commentary_area .difficult_point dd {
   }
 
   /* タイトル */
-  main h1 {
+  main .title {
     margin: 40vh auto 5vh;
   }
 
-  main h1 img {
+  main .title img {
     width: 25vw;
   }
 
@@ -365,13 +370,13 @@ main .commentary_area .difficult_point dd {
     display: block;
   }
 
-  main h3 {
+  main .link {
     margin-top: -2vh;
     margin-bottom: 10vh;
     position: relative;
   }
 
-  main h3 a {
+  main .link a {
     width: 25vw;
     letter-spacing: 2px;
     transition: .5s;
@@ -380,12 +385,12 @@ main .commentary_area .difficult_point dd {
     border: 1px solid #000;
   }
 
-  main h3 a:hover:before,
-  main h3 a:hover:after {
+  main .link a:hover:before,
+  main .link a:hover:after {
     content: none;
   }
 
-  main h3 a:after {
+  main .link a:after {
     content: '';
     position: absolute;
     top: -10%;

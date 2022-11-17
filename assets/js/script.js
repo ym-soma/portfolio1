@@ -58,7 +58,7 @@ $(function() {
   });
 
   //スクロールしてトップへ戻る
-  btn.on('click',function () {
+  top.on('click',function () {
     $('html,body').animate({
       scrollTop: 0
     });
