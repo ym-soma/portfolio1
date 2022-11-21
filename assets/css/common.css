@@ -14,6 +14,7 @@ figcaption {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: #333;
 }
 
 img {
@@ -378,7 +379,12 @@ main .scroll:after {
 
 #profile .introduction .prof_text p:nth-child(3),
 #profile .introduction .prof_text p:nth-child(4) {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  line-height: 1.7rem;
+}
+#profile .introduction .prof_text p:nth-child(5){
+  line-height: 1.7rem;
+  
 }
 
 /* 制作 */
