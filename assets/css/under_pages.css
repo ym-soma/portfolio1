@@ -244,6 +244,7 @@ main .commentary_area dd {
 /* 文章エリア_概要 */
 main .commentary_area .summary p {
   margin-left: 1vw;
+  margin-bottom: 3.5vh;
 }
 
 main .commentary_area .summary dt:nth-child(1) {
@@ -320,7 +321,7 @@ main .commentary_area .difficult_point dt::before {
 }
 
 main .commentary_area .difficult_point dd {
-  margin-bottom: 2.5vh;
+  margin-bottom: 3vh;
 }
 
 
