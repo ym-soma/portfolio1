@@ -140,7 +140,7 @@ main .scroll:before {
   /*描画位置*/
   position: absolute;
   top: 0px;
-  right: -5px;
+  right: -8px;
   /*矢印の形状*/
   width: .5px;
   height: 15px;
@@ -153,7 +153,7 @@ main .scroll:after {
   /*描画位置*/
   position: absolute;
   top: -23px;
-  right: 0;
+  right: -3px;
   /*矢印の形状*/
   width: .5px;
   height: 40px;
@@ -488,7 +488,7 @@ main .arrival:before {
   /*描画位置*/
   position: absolute;
   bottom: 25px;
-  right: -5px;
+  right: -8px;
   /*矢印の形状*/
   width: 1px;
   height: 15px;
@@ -501,7 +501,7 @@ main .arrival:after {
   /*描画位置*/
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -3px;
   /*矢印の形状*/
   width: 1px;
   height: 40px;
