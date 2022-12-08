@@ -131,10 +131,12 @@ h2 {
 .text .deco_blueberry {
   position: absolute;
   right: 0;
-  animation: shake 1s infinite;
+
+  /* 動きの設定 */
+  animation: shake_blueberry 1s infinite;
 }
 
-@keyframes shake {
+@keyframes shake_blueberry {
     50% {transform: rotate(0deg);}
     51% {transform: rotate(5deg);}
     99% {transform: rotate(5deg);}
@@ -145,13 +147,15 @@ h2 {
 .text .deco_raspberry {
   position: absolute;
   transform: rotate(15deg);
-  animation: shake 1s infinite;
+
+  /* 動きの設定 */
+  animation: shake_raspberry 1s infinite;
 }
 
-@keyframes shake {
+@keyframes shake_raspberry {
     50% {transform: rotate(15deg);}
-    51% {transform: rotate(5deg);}
-    99% {transform: rotate(5deg);}
+    51% {transform: rotate(10deg);}
+    99% {transform: rotate(10deg);}
     100% {transform: rotate(15deg);}
 }
 
@@ -160,10 +164,12 @@ h2 {
   position: absolute;
   right: 0;
   bottom: -40px;
-  animation: shake 1s infinite;
+
+  /* 動きの設定 */
+  animation: shake_rosemar 1s infinite;
 }
 
-@keyframes shake {
+@keyframes shake_rosemar {
     50% {transform: rotate(0deg);}
     51% {transform: rotate(5deg);}
     99% {transform: rotate(5deg);}

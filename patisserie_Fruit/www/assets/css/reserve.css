@@ -113,7 +113,7 @@ header h2 {
 .textSection11 .ds_f {
 	float:right;
 	clear: both;
-	margin-right: 140px;
+	margin-right: 110px;
 }
 
 #text_a, #text_b, #text_c, #text_d, #text_j, #text_k, #text_l, #text_m{
@@ -173,7 +173,19 @@ textarea {
 	display: block;
 	margin: 0 auto;
 	padding: 12px 35px;
+	transition: .2s;
+	box-shadow: 0 4px 0 #333;
 }
+.submitBtn_1:hover,
+.submitBtn_2:hover{
+	color: #fff;
+	background-color: #5b3e2a;
+	transition: .4s;
+	cursor: pointer;
+	transform: translateY(4px);
+	box-shadow:none;
+} 
+
 
 .submitBtn_1:focus {
 	outline: none;
@@ -196,7 +208,7 @@ textarea {
 	to {
 		transform: scale(1);
 	}
-  }
+}
   
 
 .cake, .reserve_text{
