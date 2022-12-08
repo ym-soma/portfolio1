@@ -131,13 +131,28 @@ h2 {
 .text .deco_blueberry {
   position: absolute;
   right: 0;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    50% {transform: rotate(0deg);}
+    51% {transform: rotate(5deg);}
+    99% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 
 .text .deco_raspberry {
   position: absolute;
   transform: rotate(15deg);
+  animation: shake 1s infinite;
+}
 
+@keyframes shake {
+    50% {transform: rotate(15deg);}
+    51% {transform: rotate(5deg);}
+    99% {transform: rotate(5deg);}
+    100% {transform: rotate(15deg);}
 }
 
 
@@ -145,6 +160,14 @@ h2 {
   position: absolute;
   right: 0;
   bottom: -40px;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    50% {transform: rotate(0deg);}
+    51% {transform: rotate(5deg);}
+    99% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 

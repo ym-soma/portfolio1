@@ -27,13 +27,13 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 
 /* ラップ */
 .wrapper {
   width: 80vw;
-  margin-left: 18vw;
+  margin-left: 16vw;
 }
 
 /* リンク */
@@ -43,7 +43,6 @@ a {
   margin-top: -30px;
   padding-top: 30px;
 }
-
 
 /* 横並び */
 .ds_f {
@@ -60,7 +59,7 @@ a {
 
 
 /* 全体 */
-html{
+html {
   background-image: url(../images/common/left_bg.png);
   background-repeat: repeat-y;
 }
@@ -75,11 +74,15 @@ h2 {
   font-size: 3rem;
   line-height: 3rem;
 }
-
-h3 {
+/* h2の下の文字 */
+.sup {
+  font-size: 1.17em;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 10vh;
 }
+
+
 
 
 /* main_title */
@@ -87,9 +90,11 @@ main .title {
   text-align: center;
   margin: 38vh auto 65vh;
 }
+
 main .title img {
   width: 30vw;
 }
+
 
 /* スクロールバー */
 main {
@@ -119,6 +124,7 @@ main .scroll {
     top: 9.8%;
   }
 }
+
 
 /*Scrollテキスト*/
 main .scroll span {
@@ -214,7 +220,6 @@ main .scroll:after {
 }
 
 
-
 /* ナビ */
 .always {
   position: fixed;
@@ -294,7 +299,6 @@ main .scroll:after {
   border: none;
   padding: 10px 3px;
   transition: .5s;
-
 }
 
 .open li a:hover {
@@ -351,16 +355,8 @@ main .scroll:after {
 
 /* 自己紹介＿自画像 */
 #profile .introduction .faceimg {
-  /* height: 100%;
-  border: 1px solid;
-  border-radius: 50%;
-  padding: 35px 80px; */
   margin: auto 0;
-}
-
-#profile .introduction .faceimg img {
-  /* width: 210px;
-  height: 300px; */
+  padding-left: 4vw;
 }
 
 /* 自己紹介＿テキスト */
@@ -374,25 +370,25 @@ main .scroll:after {
   font-size: 1.3rem;
 }
 
-#profile .introduction .prof_text p:nth-child(2) {
+#profile .prof_text_inner li{
+  margin-bottom: 30px;
+}
+
+.prof_text h3 {
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: bold;
   margin-bottom: 3vh;
 }
 
-#profile .introduction .prof_text p:nth-child(3),
-#profile .introduction .prof_text p:nth-child(4) {
-  margin-bottom: 30px;
-}
 
 /* 制作 */
 #work {
-  margin-bottom: 30vh;
+  margin-bottom: 26vh;
 }
 
 #work ul li {
-  margin: 2vw 2vw;
+  margin:0 2vw 4vw;
 }
 
 #work figure {
@@ -408,8 +404,7 @@ main .scroll:after {
   border: 1px solid #999;
 }
 
-#work figcaption,
-#work p {
+#work figcaption{
   text-align: left;
 }
 
@@ -421,7 +416,7 @@ main .scroll:after {
 
 #skill ul li {
   width: 240px;
-  margin: 3vh 3vw;
+  margin: 0 3vh 3vw;
 }
 
 #skill ul li img {
@@ -430,7 +425,10 @@ main .scroll:after {
   text-align: center;
 }
 
-#skill ul li h4,
+#skill ul li h3 {
+  text-align: center;
+}
+
 #skill ul li .icon {
   text-align: center;
 }
@@ -520,7 +518,6 @@ main .arrival:after {
     width: 100%;
   }
 
-
   /* 全体 */
   h2 {
     font-size: 1.8rem;
@@ -533,10 +530,12 @@ main .arrival:after {
     font-weight: 100;
   }
 
+
   /* ナビ */
   .always {
     display: none;
   }
+
 
   /* ハンバーガーボタン */
   .btn {
@@ -574,8 +573,6 @@ main .arrival:after {
     margin-bottom: 14vh;
   }
 
-
-
   /* 自己紹介_自画像 */
   #profile .introduction .faceimg {
     margin-bottom: 5%;
@@ -601,6 +598,7 @@ main .arrival:after {
     font-size: .9rem;
   }
 
+
   /* 制作 */
   #work {
     margin-bottom: 14vh;
@@ -624,6 +622,7 @@ main .arrival:after {
   #work p {
     font-size: .8rem;
   }
+
 
   /* スキル */
   #skill p {

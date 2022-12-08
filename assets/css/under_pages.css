@@ -13,6 +13,7 @@
 /* 全体 */
 #main_content {
   margin-bottom: 30vh;
+  padding-left: 5vw;
 }
 
 
@@ -102,7 +103,7 @@ main .title img {
 }
 
 main h1 {
-  padding-left: 6vw;
+  padding-left: 1vw;
   font-size: 1.7rem;
   line-height: 1.7rem;
   text-align: center;
@@ -114,7 +115,7 @@ main h1 br {
 
 main .link {
   font-size: .9em;
-  padding-left: 4vw;
+  padding-left: 1vw;
   margin-bottom: 10vh;
 }
 

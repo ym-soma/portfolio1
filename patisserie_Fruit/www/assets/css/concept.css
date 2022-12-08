@@ -107,12 +107,28 @@ main .concept_c .orange {
     position: absolute;
     top: -80px;
     left: 40px;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    50% {transform: rotate(0deg);}
+    51% {transform: rotate(5deg);}
+    99% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 main .concept_c .grape {
     position: absolute;
     bottom: -250px;
     right: 20px;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    50% {transform: rotate(0deg);}
+    51% {transform: rotate(5deg);}
+    99% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 main .center_line {
@@ -141,6 +157,14 @@ main .concept_f .cherry {
     position: absolute;
     left: 30px;
     bottom: -250px;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    50% {transform: rotate(0deg);}
+    51% {transform: rotate(5deg);}
+    99% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 main .concept_text {
