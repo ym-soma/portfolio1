@@ -10,10 +10,15 @@
   justify-content: baseline;
 }
 
+
 /* 全体 */
 #main_content {
   margin-bottom: 30vh;
   padding-left: 5vw;
+}
+
+#main_conten br{
+  display: none;
 }
 
 
@@ -90,9 +95,8 @@
   font-weight: bold;
 }
 
-/* タイトル */
 
-/* main_title */
+/* タイトル */
 main .title {
   margin: 30vh auto 10vh;
   padding-left: 5vw;
@@ -102,14 +106,14 @@ main .title img {
   width: 18vw;
 }
 
-main h1 {
+main h2 {
   padding-left: 1vw;
   font-size: 1.7rem;
   line-height: 1.7rem;
   text-align: center;
 }
 
-main h1 br {
+main h2 br {
   display: none;
 }
 
@@ -190,7 +194,7 @@ main .link a:hover:after {
 
 }
 
-main h2 {
+main h3 {
   background-color: #214098;
   height: 30px;
   text-align: center;
