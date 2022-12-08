@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: "メイリオ", "Meiryo", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Gill Sans","CenturyGothic","AppleGothic","Arial", sans-serif;
   position: relative;
 }
 
@@ -410,10 +410,6 @@ main .scroll:after {
   transition: .5s;
 }
 
-#work figcaption {
-  font-weight: bold;
-}
-
 #work .period {
   font-size: .9rem;
 }
@@ -620,7 +616,7 @@ main .arrival:after {
   }
 
   #work ul li {
-    margin-bottom: 6vw;
+    margin-bottom: 8vw;
     width: 72vw;
   }
 
@@ -629,17 +625,12 @@ main .arrival:after {
     height: 30vh;
   }
 
-  #work figcaption,
-  #work p {
+  #work .period {
     font-size: .8rem;
   }
 
 
   /* スキル */
-  #skill p {
-    font-size: .8rem;
-  }
-
   #skill ul li {
     width: 80%;
     margin-bottom: 5vh;
