@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',"Meiryo",'ＭＳ Ｐゴシック',sans-serif;
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', "Meiryo", 'ＭＳ Ｐゴシック', sans-serif;
   position: relative;
 }
 
@@ -66,7 +66,8 @@ h2 {
 /* リンク */
 #profile,
 #work,
-#skill {
+#skill,
+#study {
   margin-top: -30px;
   padding-top: 30px;
 }
@@ -88,12 +89,32 @@ h2 {
 main .title {
   text-align: center;
   margin: 38vh auto 65vh;
+  position: relative;
+  padding-bottom: 10vh;
 }
 
-main .title img {
-  width: 30vw;
-}
+/* 影動かす時用 */
+/* main .title .black {
+  position: absolute;
+  font-family: "bio-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10rem;
+  top: 9%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+} */
 
+main .title .orange {
+  font-family: "bio-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10rem;
+  color: #ff5a00;
+  z-index: 9999;
+  text-shadow: -15px 0 0 #000;
+}
 
 /* スクロールバー */
 main {
@@ -101,7 +122,7 @@ main {
 }
 
 main .scroll {
-  /*描画位置※位置は適宜調整してください*/
+  /*描画位置*/
   position: absolute;
   top: 0;
   right: 50%;
@@ -129,7 +150,7 @@ main .scroll {
 main .scroll span {
   position: absolute;
   left: -20px;
-  top: -30px;
+  top: -130px;
   /*テキストの形状*/
   color: #000;
   font-size: 0.7rem;
@@ -139,13 +160,13 @@ main .scroll span {
   padding-left: 0;
 }
 
-/* 矢印の描写 */
+/* 矢印の右側 */
 main .scroll:before {
   content: "";
   /*描画位置*/
   position: absolute;
-  top: 0px;
-  right: -8px;
+  top: -100px;
+  right: -7.5px;
   /*矢印の形状*/
   width: .5px;
   height: 15px;
@@ -153,11 +174,12 @@ main .scroll:before {
   transform: skewX(-31deg);
 }
 
+/* 矢印の縦棒 */
 main .scroll:after {
   content: "";
   /*描画位置*/
   position: absolute;
-  top: -23px;
+  top: -123px;
   right: -3px;
   /*矢印の形状*/
   width: .5px;
@@ -266,9 +288,8 @@ main .scroll:after {
   display: block;
   position: fixed;
   z-index: 99999;
-  top: 190px;
-  width: 100%;
-  height: 100vh;
+  top: 25%;
+  left: 10%;
 }
 
 .open li {
@@ -410,13 +431,17 @@ main .scroll:after {
   transition: .5s;
 }
 
+#work figcaption {
+  font-weight: bold;
+}
+
 #work .period {
   font-size: .9rem;
 }
 
 /* スキル */
 #skill {
-  margin-bottom: 20vh;
+  margin-bottom: 26vh;
 }
 
 #skill ul li {
@@ -435,6 +460,30 @@ main .scroll:after {
 }
 
 #skill ul li .icon {
+  text-align: center;
+}
+
+/* スキル */
+#study {
+  margin-bottom: 20vh;
+}
+
+#study ul li {
+  width: 240px;
+  margin: 0 3vh 3vw;
+}
+
+#study ul li img {
+  height: 190px;
+  width: 190px;
+  text-align: center;
+}
+
+#study ul li h3 {
+  text-align: center;
+}
+
+#study ul li .icon {
   text-align: center;
 }
 
@@ -538,6 +587,17 @@ main .arrival:after {
   }
 
 
+  /* メインタイトル */
+  main .title {
+    margin: 38vh auto 100vh;
+  }
+
+  main .title .orange {
+    font-size: 4rem;
+    text-shadow: -8px 0 0 #000;
+  }
+
+
   /* ナビ */
   .always {
     display: none;
@@ -560,23 +620,23 @@ main .arrival:after {
 
   /* スクロールダウン */
   main .scroll:before {
-    top: -46px;
+    top: -370px;
     right: -7px;
   }
 
   main .scroll span {
     left: -22px;
-    top: -75px;
+    top: -400px;
   }
 
   main .scroll:after {
-    top: -70px;
+    top: -395px;
   }
 
 
   /* 自己紹介 */
   #profile {
-    padding-top: 20vh;
+
     margin-bottom: 14vh;
   }
 
@@ -631,6 +691,11 @@ main .arrival:after {
 
 
   /* スキル */
+
+  #skill {
+    margin-bottom: 14vh;
+  }
+
   #skill ul li {
     width: 80%;
     margin-bottom: 5vh;
@@ -643,5 +708,10 @@ main .arrival:after {
 
   #skill ul li:nth-child(4) p:last-child br:first-child {
     display: none;
+  }
+
+  /* 勉強中 */
+  #study ul li {
+    margin-bottom: 5vh;
   }
 }

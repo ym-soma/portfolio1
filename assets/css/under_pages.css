@@ -17,7 +17,7 @@
   padding-left: 5vw;
 }
 
-#main_conten br{
+#main_conten br {
   display: none;
 }
 
@@ -98,8 +98,22 @@
 
 /* タイトル */
 main .title {
-  margin: 30vh auto 10vh;
-  padding-left: 5vw;
+  margin: 35vh auto 10vh;
+  padding-left: 7vw;
+  position: relative;
+}
+
+/* 影動かす時用 */
+/* main .title .black {
+  position: absolute;
+  font-size: 7rem;
+  top: 11.5%;
+  left: 53.5%;
+} */
+
+main .title .orange {
+  font-size: 7rem;
+  text-shadow: -10px 0 0 #000;
 }
 
 main .title img {
@@ -107,7 +121,7 @@ main .title img {
 }
 
 main h2 {
-  padding-left: 1vw;
+  padding-left: 4vw;
   font-size: 1.7rem;
   line-height: 1.7rem;
   text-align: center;
@@ -118,6 +132,7 @@ main h2 br {
 }
 
 main .link {
+  padding-left: 2.5vw;
   font-size: .9em;
   margin-bottom: 10vh;
 }

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+dd,
+dt,
+dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
+}
+
+p {
+  color: #333;
+}
+
+/* header */
+header .logo {
+  text-align: center;
+  margin: 45px auto 35px auto;
+}
+
+header .logo img {
+  width: 110px;
+}
+
+header .link {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 20px 100px;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 50px;
+}
+
+header .item li {
+  padding-right: 15px;
+}
+
+header .item ul {
+  display: flex;
+}
+
+
+
+
+/* main */
+main {
+  width: 800px;
+  display: flex;
+  margin: auto;
+}
+
+/* main left  */
+main .left img {
+  width: 400px;
+}
+
+/* main right */
+main .right {
+  width: 70%;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.right h1 {
+  border-top: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
+  color: #333;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.right p {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+/* right dl */
+.order {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.order table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order th {
+  width: 50px;
+  padding: 10px;
+  border-right:  1px solid #c3c3c3;
+  font-weight: normal;
+}
+.order th:last-child {
+  width: 180px;
+  border: none;
+}
+.order td {
+  border-top: 1px solid #c3c3c3;
+  border-right:  1px solid #c3c3c3;
+  padding: 9px;
+}
+.order td:last-child{
+  border-right: none;
+}
+
+.order select {
+  width: 100%;
+  display: block;
+  border-color: #c3c3c3;
+}
+
+.order .btn {
+  padding: 25px;
+  background-color: #4B4B4B;
+  position: relative;
+}
+.order .btn a {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+
+/* main size */
+.size {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.size table{
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+.size table th:first-child{
+  width: 50px;
+
+}
+.size table th{
+  background-color: #ecebeb;
+  font-weight: normal;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #c3c3c3;
+  
+}
+.size table td{
+  border-collapse: collapse;
+  border: 1px solid #c3c3c3;
+
+}
+
+
+/* footer */
+
+footer{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}

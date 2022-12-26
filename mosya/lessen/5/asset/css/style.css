@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* all */
+body {
+  font-family: "Crimson Text", serif;
+}
+
+.d_f {
+  display: flex;
+}
+
+/* header */
+header .mv {
+  width: 90vw;
+  margin: auto;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 100%;
+}
+
+header .logo {
+  width: 110px;
+  height: 20px;
+  padding-right: 50px;
+}
+
+header .nav {
+  width: 90vw;
+  margin: auto;
+  line-height: 20px;
+  margin-bottom: 60px;
+}
+
+header .nav a {
+  font-size: 13px;
+  padding-right: 30px;
+}
+
+/* main */
+main .wrap {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+main .img {
+  width: 50%;
+}
+
+main #work img,
+main #concept img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+main .text {
+  width: 50%;
+  padding: 150px 80px 150px 70px;
+  box-sizing: border-box;
+}
+
+main .text h1 {
+  font-weight: normal;
+}
+
+main .text h2 {
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+footer .logo img {
+  width: 100px;
+  height: 15px;
+}

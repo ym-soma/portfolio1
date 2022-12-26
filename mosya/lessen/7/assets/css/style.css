@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+/* reset */
+body,h1,h2,h3,p,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img{
+  vertical-align: bottom;
+}
+
+/* all */
+body{
+  font-family: "Arial","Hiragino Sans","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+}
+.wrap{
+  width: 1200px;
+  padding: 0 5%;
+  margin: auto;
+}
+p{
+  font-size: 14px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+/* header */
+header .logo{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.mv img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+/* main magazine*/
+main .magazine{
+  margin-bottom: 30px;
+}
+.magazine .text{
+  text-align: center;
+  padding: 6% 10% 2%;
+}
+.magazine .text h1{
+  margin-bottom: 15px;
+}
+
+.magazine .photo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.magazine .box_text{
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 6% 11%;
+}
+
+.magazine .box{
+  background-image: url(../img/magazine-archive.jpg);
+  padding: 17% 9%;
+  margin: 1%;
+  background-position: center;
+  width: 25%;
+  position: relative;
+}
+.magazine .box h2{
+  font-size: 20px;
+}
+.magazine .box a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.magazine .box:hover{
+  opacity: .8;
+}
+
+/* main fashion */
+.fashion{
+  height: 480px;
+  background-image: url(../img/fashion.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.fashion_text{
+  text-align: center;
+  padding: 5% 10%;
+}
+.fashion_text p{
+  padding: 0 20%;
+  margin-bottom: 3%;
+}
+.fashion_text h2{
+  margin-bottom: 2%;
+}
+
+.fashion_text a{
+  border: 1px solid #333;
+  width: 100px;
+  margin: auto;
+  padding: 15px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+
+/* main report */
+.report{
+  background-color: #f5f5f5;
+  margin-top: 5%;
+  padding: 4% 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.report img{
+  width: 100%;
+}
+.report p{
+  margin-bottom: 5%;
+  text-align: left;
+}
+.report h2{
+  margin-bottom: 10%;
+
+}
+
+/* main catalog */
+.catalog{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.catalog_img{
+  width: 48%;
+}
+.catalog_text{
+  width: 46%;
+}
+
+/* main antique */
+.antique{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+.antique_img{
+  width: 48%;
+}
+.antique_text{
+  width: 48%;
+}
+
+.antique_text a{
+  width: 100px;
+  display: inline-block;
+  border: 1px solid #333;
+  font-size: 12px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* footer */
+footer{
+  background-color: #333;
+}
+footer .wrap{
+  display: flex;
+  padding: 100px 0;
+}
+footer div{
+  width: 33%;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 12px;
+  align-items:center;
+}
+footer h3{
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* footer logo */
+footer .logo{
+  padding-left: 75px;
+}
+
+/* footer list */
+footer .list li{
+  margin-bottom: 5px;
+}
+footer li::before{
+  content: "-";
+  padding-right: 5px;
+}
+
+/* footer text */
+footer .text{
+  margin-right: 6%;
+}
+footer .text p{
+  font-size: 12px;  
+  line-height: 2;
+  padding-bottom: 10%;
+}
+
+/* footer copy */
+footer .copy{
+  text-align: center;
+  background-color: #fff;
+  padding: 2% 0;
+}
+
+
+
+@media screen and (max-width:896px){
+  body{
+    width: auto;
+  }
+
+  .magazine .photo{
+    display: block;
+  }
+
+  .catalog {
+    display: block;
+  }
+  .antique{
+    display: block;
+  }
+
+
+  .wrap{
+    width: auto;
+  }
+  .magazine .box{
+    width: auto;
+    margin: 0 0 10% 0;
+    padding: 35% 10%;
+  }
+  .catalog_img {
+    width: auto;
+  }
+  .catalog_text {
+    width: auto;
+  }
+  .antique_img {
+    width: auto;
+  }
+  .antique_text{
+    width: auto;
+  }
+  footer .wrap {
+    display: block;
+  }
+  footer div {
+    width: auto;
+  }
+
+
+  /* margin */
+  .magazine .text {
+    padding: 10% 0;
+  }
+  .mv img {
+  margin-bottom: 10%;
+  }
+  main .magazine {
+    margin-bottom: 22%;
+  }
+  .fashion{
+    margin-bottom: 15%;
+  }
+  .fashion_text {
+    padding: 0;
+    padding-top: 10%;
+  }
+  .fashion_text h2 {
+    margin-bottom: 5%;
+  }
+  .fashion_text p {
+    padding: 0;
+    margin-bottom: 10%;
+  }
+  .report {
+    margin-top: 0;
+    padding-top: 8%;
+  }
+  .report img {
+    margin-bottom: 5%;
+  }
+  .report p {
+    margin-bottom: 30px;
+  }
+  .report h2 {
+    margin: 30px 0;
+  }
+  .antique_text a {
+    margin-bottom: 40px;
+  }
+  footer .wrap {
+    padding:0;
+  }
+  footer .logo {
+    padding-left: 5%;
+    text-align: center;
+  }
+  footer div {
+    padding: 20px 40px 20px;
+  }
+  footer .text {
+    margin-right: 0;
+  }
+  footer .copy {
+    padding: 30px;
+  }
+  footer .text p {
+    padding-bottom: 40px;
+  }
+}

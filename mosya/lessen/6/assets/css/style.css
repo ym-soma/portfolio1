@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* reset */
+body,h1,h2,h3,p,dl,dd,dt,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img{
+  vertical-align: bottom;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* all */
+.inner{
+  width: 960px;
+  padding: 4%;
+  margin: auto;
+  box-sizing: border-box;
+
+}
+
+/* header */
+header .mv{
+  margin-bottom: 30px;
+}
+header .mv img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+header .inner{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+header ul{
+  box-sizing: border-box;
+  display: flex;
+
+}
+header li{
+  line-height: 20px;
+  margin-left: 30px;
+  font-size:  0.875rem;
+}
+header li img{
+  width: 20px;
+}
+
+
+/* main */
+main p{
+  letter-spacing: 0.5px;
+}
+main h1{
+  text-align: center;
+  margin: 0 5% 10%;
+}
+
+/* about */
+main .about p{
+  font-size: 0.9rem;
+}
+main .about .name,
+main .about .mail{
+  margin-bottom: 4%;
+}
+
+/* work */
+main .works{
+  display: block;
+  width: 960px;
+  margin: auto;
+}
+main .works ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .works li{
+  width: 31%;
+  margin-bottom: 30px;
+}
+
+main .works li img{
+  width: 100%;
+}
+main .news{
+  clear: left;
+  font-size: 0.875rem;
+}
+main .news dd{
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #ccc;
+  width: 840px;
+}
+main .news dd:nth-of-type(1){
+  border-top: 1px solid #ccc;
+  padding-top: 2%;
+  
+}
+
+main .news dt{
+  float: left;
+  clear: left;
+  width: 150px;
+  margin-left: 1%;
+}
+main .news dt:first-child{
+  padding-top: 2%;
+}
+
+main .contact dt{
+  float: left;
+  clear: left;
+  width: 130px;
+}
+main .contact input[type="text"],
+main .contact input[type="email"]{
+  width: 700px;
+  height: 40px;
+  margin-bottom: 1%;
+  border:1px solid #ccc;
+}
+main .contact textarea{
+  width: 700px;
+  height: 150px;
+  border-color: #ccc;
+  margin-bottom: 3%;
+}
+
+main .contact p{
+  text-align: center;
+}
+main input[type="submit"]{
+  color: #fff;
+  background-color: #24292e;
+  padding: 2% 10%;
+  margin-bottom: 8%;
+}
+
+/* footer */
+footer{
+  background-color: #24292e;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0.5% 0;
+}
+
+
+@media screen and (max-width:600px){
+  /* all */
+  body{
+    width: auto;
+  }
+  img{
+    max-width: auto;
+  }
+
+  /* reset */
+  header .inner{
+    flex-direction: column;
+  }
+  main .works li{
+    position: static;
+    clear: left;
+  }
+
+  /* width */
+  .inner{
+    width: auto;
+  }
+  header .inner{
+    width: auto;
+  }
+  main .works{
+    width: auto;
+  }
+  main .works li{
+    width: auto;
+  }
+  main .contact input[type="text"],
+  main .contact input[type="email"]{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+  }
+  main .contact textarea{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  main .news dd {
+    width: auto;
+  }
+
+  /* outhe */
+  header .logo{
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  header .inner {
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+  header ul {
+    justify-content: space-around;
+    margin: 0 10%;
+  }
+  header li {
+    margin-left: 0;
+  }
+  header .mv{
+    margin-bottom: 20%;
+  }
+  main p {
+  letter-spacing: normal;
+  }
+  main .about{
+    margin-bottom: 10%;
+  }
+  main .about .name,
+  main .about .mail {
+    margin-bottom: 10%;
+  }
+  main .about .text{
+    text-align: justify
+  }
+
+  main .news{
+    font-size: 0.9rem;
+    margin-bottom: 10%;
+  }
+  main .news dl{
+    border-top: 1px solid #ccc;
+    margin-bottom: 5%;
+  }
+  main .news dt {
+    float:none;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  main .news dd {
+    padding:5%;
+    padding-top: 0;
+  }
+  main .news dd:nth-of-type(1) {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  main .contact dt {
+    float:none;
+  }
+  main .contact textarea {
+  margin-bottom: 8%;
+  }
+  main input[type="submit"] {
+    padding: 4% 25%;
+    margin-bottom: 15%;
+  }
+
+  footer {
+    padding: 2% 0;
+  }
+}
+

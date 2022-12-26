@@ -1,7 +1,8 @@
 // スムーススクロール
 $(function () {
-  $("a[href^=#]:not([href=#])").click(function () {
-
+  $("a[href^=#]").click(function () {
+// a[href^=#]＝href属性が "#" で始まる要素を取得
+// ([href=#])＝href属性が "#" のみの要素を取得
     var target = $($(this).attr("href")).offset().top;
 
     $("html,body").animate({ scrollTop: target }, 500);

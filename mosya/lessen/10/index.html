@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>創作</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+
+<!-- BEMで設計してみる -->
+
+<body>
+  <header class="header ds">
+    <h1 class="logo">
+      <img src="assets/img/logo.svg" class="logo__img" alt="創作">
+    </h1>
+    <ul class="menu tate">
+      <li class="menu__item">お知らせ</li>
+      <li class="menu__item">商品のご紹介</li>
+      <li class="menu__item">店舗のご案内</li>
+    </ul>
+    <p class="linkbtn tate">
+      <a href="#" class="linkbtn__online">オンラインストアを見る</a>
+    </p>
+  </header>
+
+  <main>
+    <section class="news-group tate wrapper">
+      <h2 class="title">
+        <span class="title__item-small ds">News</span>
+        <span class="title__item">お知らせ</span>
+      </h2>
+      <dl class="news-item">
+        <dt class="news-item__day">2021.01.01</dt>
+        <dd class="news-item__text">タイトルタイトルタイトルタイトル</dd>
+        <dt class="news-item__day">2021.01.02</dt>
+        <dd class="news-item__text">タイトルタイトルタイトルタイトル</dd>
+        <dt class="news-item__day">2021.01.03</dt>
+        <dd class="news-item__text">タイトルタイトルタイトルタイトル</dd>
+        <dt class="news-item__day">2021.01.04</dt>
+        <dd class="news-item__text">タイトルタイトルタイトルタイトル</dd>
+        <dt class="news-item__day">2021.01.05</dt>
+        <dd class="news-item__text">タイトルタイトルタイトルタイトル</dd>
+      </dl>
+    </section>
+
+    <section class="photo1-group wrapper">
+      <div class="photo1-group__inner ds">
+        <h2 class="photo1-title tate">
+          <span class="photo1-title__item">新しい価値の創造</span>
+          <span class="photo1-title__item-small">Create New Values</span>
+        </h2>
+        <div class="photo1-img">
+          <img src="assets/img/products1.jpg" class="photo1-img__item" alt="新しい価値の創造のビジュアル">
+        </div>
+      </div>
+      <p class="photo1-text">
+        テキストテキスト<br>
+        テキストテキスト
+      </p>
+    </section>
+
+    <section class="photo2-group wrapper">
+      <div class="photo2-group__inner ds">
+        <h2 class="photo2-title tate">
+          <span class="photo2-title__item">科学と技術の調和</span>
+          <span class="photo2-title__item-small">Science &amp; Technology</span>
+        </h2>
+        <div class="photo2-img">
+          <img src="assets/img/products2.jpg" class="photo2-img__item" alt="科学と技術の調和のビジュアル">
+        </div>
+      </div>
+      <p class="photo2-text">
+        テキストテキスト<br>
+        テキストテキスト
+      </p>
+    </section>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.683163955752!2d139.73058174304606!3d35.66017701706509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1671265405321!5m2!1sja!2sjp"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="right-group tate">
+        <p class="logo">
+          <img src="assets/img/logo.svg" class="logo__img" alt="創作">
+        </p>
+        <address class="address tate">
+          〒１０６-００３２　東京都港区六本木５丁目×××××<br>
+          電話：０３-ＸＸＸＸ-ＸＸＸＸ
+        </address>
+        <ul class="menu">
+          <li class="menu__item">お知らせ</li>
+          <li class="menu__item">商品のご紹介</li>
+          <li class="menu__item">店舗のご案内</li>
+        </ul>
+      </div>
+      <div class="linkbtn tate ds">
+          <a href="#" class="linkbtn__online">オンラインストアを見る</a>
+          ｜
+          <a href="#" class="linkbtn__info">お問い合わせ</a>
+      </div>
+    </div>
+    <small class="copyright">
+      &copy; SOUSAKU
+    </small>
+  </footer>
+</body>
+
+</html>
