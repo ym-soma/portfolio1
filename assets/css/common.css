@@ -261,6 +261,9 @@ main .scroll:after {
 .always ul li:first-child {
   height: 150px;
 }
+.always ul li:nth-of-type(3) {
+  height: 125px;
+}
 
 .always ul li a {
   width: 100%;
@@ -289,7 +292,7 @@ main .scroll:after {
   position: fixed;
   z-index: 99999;
   top: 25%;
-  left: 10%;
+  left: 40%;
 }
 
 .open li {
@@ -615,6 +618,10 @@ main .arrival:after {
     left: unset;
     right: -50px;
     top: -50px;
+  }
+
+  .open {
+    left: 10%;
   }
 
 
