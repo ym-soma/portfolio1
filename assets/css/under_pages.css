@@ -343,6 +343,13 @@ main .commentary_area .difficult_point dd {
 }
 
 
+.for_now {
+  text-align: center;
+  padding-left: 7vw;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
 
 @media screen and (max-width:780px) {
 
@@ -360,27 +367,27 @@ main .commentary_area .difficult_point dd {
     flex-wrap: wrap;
   }
 
+
   /* 全体 */
   #main_content {
     margin-bottom: 15vh;
   }
+
 
   /* パンくず */
   .crumb {
     display: none;
   }
 
+
   /* タイトル */
   main .title {
-    margin: 20vh auto 5vh;
+    margin: 20vh auto 0;
   }
 
-  main .title img {
-    width: 25vw;
-  }
-
-  main h1 {
-    font-size: 1.3rem;
+  main .title .orange {
+    font-size: 5rem;
+    text-shadow: -9px 0 0 #000;
   }
 
   main h2 {
@@ -478,5 +485,9 @@ main .commentary_area .difficult_point dd {
 
   main .commentary_area .summary dd::before {
     content: none;
+  }
+
+  .for_now {
+    font-size: 2rem;
   }
 }
