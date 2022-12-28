@@ -57,8 +57,7 @@ header .top {
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: #ffffffcc;
-
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.471) 85%, rgba(255, 255, 255, 0) 100%);
   padding-top: 2.5rem;
 }
 
@@ -74,6 +73,7 @@ header nav {
   height: 3rem;
   padding: 0 1.8125rem;
   transition: background-position 2s ease 0.1s;
+  font-weight: 600;
 }
 
 header nav {
@@ -104,6 +104,19 @@ header nav li:nth-child(7) {
   width: 2.5rem;
   line-height: 2.3125rem;
 }
+
+header nav .color {
+  width: 80%;
+  filter: grayscale(100%);
+  transition: .3s;
+}
+
+header nav .color:hover {
+  width: 92%;
+  filter: none;
+  transition: .3s;
+}
+
 
 header nav li:nth-child(6) {
   width: 11.375rem;
@@ -138,6 +151,58 @@ header nav li:nth-child(6) :hover::before,
 header nav li:nth-child(6) :hover::after {
   transform: translate(0.0625rem, -0.625rem);
 }
+
+
+
+
+
+
+/* ホバー時の動き */
+@keyframes wave {
+
+  /* どのくらい跳ねるかの設定 */
+  100% {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+/* スパンをブロック要素にしておく */
+.wave span {
+  display: inline-block;
+}
+
+.wave:hover span {
+  animation-name: wave;
+  animation-duration: .2s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+/* 一文字ずつ時差で動くようにしている */
+.wave:hover span:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.wave:hover span:nth-child(3) {
+  animation-delay: .2s;
+}
+
+.wave:hover span:nth-child(4) {
+  animation-delay: .3s;
+}
+
+.wave:hover span:nth-child(5) {
+  animation-delay: .4s;
+}
+
+.wave:hover span:nth-child(6) {
+  animation-delay: .5s;
+}
+
+.wave:hover span:nth-child(7) {
+  animation-delay: .6s;
+}
+
 
 
 /* ハンバーガーボタン */
@@ -185,8 +250,8 @@ header .mv1 {
 header .mv1::before {
   content: "";
   position: absolute;
-  left: 1.5rem;
-  top: 2.8125rem;
+  left: 2.5rem;
+  top: 2.675rem;
   border: 0.0625rem solid #000;
   background-color: #fff;
   width: 18.75rem;
@@ -229,8 +294,8 @@ header .mv2 {
 header .mv2::before {
   content: "";
   position: absolute;
-  right: 2.9375rem;
-  top: 3.375rem;
+  right: 2.5rem;
+  top: 2.575rem;
   display: inline-block;
   border: 0.0625rem solid #000;
   background-color: #fff;
@@ -274,8 +339,8 @@ header .mv3 {
 header .mv3::before {
   content: "";
   position: absolute;
-  right: 1.6875rem;
-  bottom: -1.875rem;
+  right: 2.5rem;
+  bottom: -2.875rem;
   border: 0.0625rem solid #000;
   background-color: #fff;
   width: 28.125rem;
@@ -743,7 +808,7 @@ footer .rest {
 
 footer .inquiry a {
   display: inline-block;
-  margin-left: 6.3125rem;
+  margin-left: 5.5125rem;
   text-align: center;
   font-size: .9rem;
   border-bottom: 0.0625rem solid #fff;
@@ -981,6 +1046,11 @@ footer small {
     width: 100vw;
     margin: 5% 0;
   }
+
+  header nav .color {
+    filter: none;
+  }
+  
 
   /* ハンバーガーボタン */
   header .btn {
