@@ -66,7 +66,6 @@ if (!navigator.userAgent.match(/(iPhone|Android)/)) {
         $(".btn").css("margin-top", "2.5rem");
 
       }
-
     });
   });
 }

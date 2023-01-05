@@ -31,6 +31,13 @@ body {
   display: flex;
 }
 
+.wrapper{
+  width: 1000px;
+  margin: auto;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+
 /* header */
 header .mv {
   width: 90vw;
@@ -61,14 +68,8 @@ header .nav a {
   padding-right: 30px;
 }
 
+
 /* main */
-main .wrap {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 main .img {
   width: 50%;
 }
@@ -81,12 +82,13 @@ main #concept img {
 
 main .text {
   width: 50%;
-  padding: 150px 80px 150px 70px;
+  padding: 150px 75px 150px 66px;
   box-sizing: border-box;
 }
 
 main .text h1 {
   font-weight: normal;
+  margin-bottom: 2px;
 }
 
 main .text h2 {
@@ -96,20 +98,15 @@ main .text h2 {
 }
 
 
-
-
-
-
-
 /* footer */
 footer {
-  justify-content: space-between;
-  width: 1000px;
-  margin: auto;
   padding: 20px 0;
 }
 
+footer div{
+  justify-content: space-between;
+}
+
 footer .logo img {
-  width: 100px;
-  height: 15px;
+  width: 110px;
 }

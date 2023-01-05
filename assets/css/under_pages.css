@@ -14,7 +14,7 @@
 /* 全体 */
 #main_content {
   margin-bottom: 30vh;
-  padding-left: 5vw;
+  padding-left: 2vw;
 }
 
 #main_conten br {
@@ -99,7 +99,7 @@
 /* タイトル */
 main .title {
   margin: 35vh auto 10vh;
-  padding-left: 7vw;
+  padding-left: 3.5vw;
   position: relative;
 }
 
@@ -121,7 +121,7 @@ main .title img {
 }
 
 main h2 {
-  padding-left: 4vw;
+  padding-left: 2vw;
   font-size: 1.7rem;
   line-height: 1.7rem;
   text-align: center;
@@ -132,7 +132,7 @@ main h2 br {
 }
 
 main .link {
-  padding-left: 2.5vw;
+  padding-left: 1.5vw;
   font-size: .9em;
   margin-bottom: 10vh;
 }

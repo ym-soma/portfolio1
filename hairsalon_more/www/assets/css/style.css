@@ -544,6 +544,7 @@ header .catch br {
 
 #style .price dl {
   width: 16.1376875rem;
+  font-size: .9rem;
 }
 
 #style .price dl:first-child {
@@ -640,6 +641,8 @@ header .catch br {
   float: left;
   clear: left;
   width: 9.9375rem;
+  font-size: .8rem;
+  line-height: 1.8rem;
   margin-left: 13.25rem;
 }
 
@@ -687,9 +690,6 @@ header .catch br {
   text-align: right;
   font-size: 0.875rem;
 }
-
-
-
 
 
 /* スライリスト */
@@ -1050,7 +1050,7 @@ footer small {
   header nav .color {
     filter: none;
   }
-  
+
 
   /* ハンバーガーボタン */
   header .btn {
