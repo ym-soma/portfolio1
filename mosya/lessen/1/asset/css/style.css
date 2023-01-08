@@ -39,6 +39,7 @@ body {
   justify-content: space-between;
 }
 
+
 /* header */
 header .logo img {
   max-width: 120px;
@@ -69,6 +70,7 @@ header .inner nav ul a {
   color: #000;
   cursor: pointer;
 }
+
 
 /* main */
 main .mv img {
@@ -136,10 +138,107 @@ main .bicycle h2 {
   padding-top: 10px;
 }
 
+
 /* footer */
 footer p {
   font-size: 10px;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .inner {
+    width: auto;
+  }
+
+  .d_f {
+    display: block;
+  }
+
+  /* header */
+  header .d_f {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .j_b {
+    justify-content: space-between;
+  }
+
+  header .logo img {
+    margin-left: 15px;
+  }
+
+  header .inner nav {
+    padding-right: 0;
+  }
+
+  header .inner nav li {
+    letter-spacing: .2px;
+    padding-top: 9px;
+    padding-right: 15px;
+  }
+
+  header .inner nav li:first-child {
+    padding-right: 30px;
+  }
+
+  /* main */
+  main .mv img {
+    height: 91vh;
+    object-fit: cover;
+  }
+
+  main .about {
+    padding: 85px 15px 0 15px;
+  }
+
+  main .about h2 {
+    margin-top: 9px;
+  }
+
+  main .about p {
+    width: auto;
+    font-size: 14px;
+    letter-spacing: .5px;
+  }
+
+  main .about img {
+    margin-left: 0;
+  }
+
+  main .about .text {
+    margin-left: 0;
+  }
+
+  main h1 {
+    margin-bottom: 59px;
+  }
+
+  main .bicycle{
+    margin-bottom: 8.5rem;
+  }
+  main .bicycle ul {
+    padding: 0px 15px;
+  }
+
+  main .bicycle ul li {
+    margin-bottom: 2rem;
+  }
+
+  main .bicycle ul li img {
+    max-width: 100%;
+  }
+  main .bicycle ul li p{
+    letter-spacing: .4px;
+  }
+
+  main .bicycle h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-top: 19px;
+  }
 }
