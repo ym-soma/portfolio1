@@ -29,12 +29,13 @@ $(function () {
     // ボタンにクラス除去
     $(".btn").removeClass("active");
     // ナビにクラス除去
-    $(".humberger").toggleClass("open");
+    $(".humberger").removeClass("open");
     // 背景のクラス除去
     $(".nav_bg").removeClass("huberger_bg");
   });
 });
 
+// totopとscrollの設定
 $(function() {
   // 変数にクラスを入れる
   var top = $('.totop');

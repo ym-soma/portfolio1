@@ -89,6 +89,12 @@ main .site li {
   margin-left: 0;
 }
 
+.block {
+  display: block;
+}
+
+
+
 @media screen and (max-width:780px) {
 
   /* 解除 */
@@ -116,9 +122,10 @@ main .site li {
 
   /* 幅修正 */
   main .site,
-  main .banner{
+  main .banner {
     margin-bottom: 30%;
   }
+
   main .site ul {
     margin-left: 10vw;
   }

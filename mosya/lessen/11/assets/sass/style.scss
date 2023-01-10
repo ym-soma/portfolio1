@@ -1,0 +1,427 @@
+@charset"UTF-8";
+
+
+html {
+  overflow: overlay;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 1px solid ccc;
+  border-right: none;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-corner {
+  display: none;
+}
+
+// レスポンシブを簡単に記述する設定
+$breakpoints: (
+  'md': 'screen and (max-width: 768px)'
+  ) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/* 横並び */
+.ds {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1206px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  background-color: #fff;
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: .8;
+    cursor: pointer;
+  }
+}
+
+/* top部分 */
+.top {
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+
+/* ハンバーガーメニュー */
+.top__button {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 5px;
+
+  &-item1 {
+    position: absolute;
+    top: -1px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+  }
+
+  &-item2 {
+    position: absolute;
+    top: 9px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+  }
+
+  &-item3 {
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+  }
+}
+
+.nav-group {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  font-size: 14.4px;
+  background-color: #000;
+  padding: 60px 25px;
+  opacity: 0;
+  transition: all .5s;
+}
+
+/* ハンバーガーボタンクリック後 */
+.active {
+  z-index: 9999;
+
+  .top__button-item1 {
+    top: 9px;
+    background-color: #fff;
+    transform: rotate(-316deg
+    );
+  transition: all 0.5s;
+}
+
+.top__button-item2 {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.top__button-item3 {
+  bottom: 9px;
+  background-color: #fff;
+  transform: rotate(316deg);
+  transition: all 0.5s;
+}
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 300px;
+  height: 100vh;
+  font-size: 14.4px;
+  background-color: #000;
+  padding: 60px 25px;
+  opacity: 1;
+  transition: all .5s;
+
+  .page-list {
+    border-top: 1px solid #fff;
+    margin-bottom: 60px;
+
+    &__item {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      padding: 24px 0;
+    }
+  }
+
+  .media-list {
+    &__item {
+      color: #fff;
+      margin-bottom: 8px;
+      padding: 5px 0;
+    }
+  }
+}
+
+
+/* メインビジュアル */
+.main-visual {
+  margin-bottom: 114px;
+
+  &__movie {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// scrollセクション
+.scroll {
+  padding-top: 100px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+
+  &__title {
+    height: 54px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.scroll-list {
+  display: flex;
+
+  &__img {
+    width: 360px;
+    height: 240px;
+    margin: auto 30px;
+
+    &-item {
+      width: 100%;
+    }
+  }
+}
+
+/* 記事セクション */
+.article {
+  padding-top: 100px;
+  margin-top: -100px;
+  margin-bottom: 60px;
+
+  &__title {
+    height: 54px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* 記事の設定 */
+.article-list {
+  box-shadow: 0px 0px 8px #00000029;
+
+  &__text {
+    padding: 26px 31px;
+    border: 1px solid #CCC;
+  }
+
+  &__item {
+    width: 385px;
+    height: 257px;
+  }
+
+  &__category {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__text-inner {
+    display: block;
+    font-size: 14.4px;
+    line-height: 24.48px;
+    margin-bottom: 33px;
+  }
+
+  &__day {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+  }
+
+}
+
+/* gridの設定 */
+.article__group {
+  display: grid;
+  grid-template-columns: repeat(3, 385px);
+  grid-template-rows: repeat(3, 444px);
+  grid-column-gap: 26px;
+  grid-row-gap: 26px;
+}
+
+.list1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.list2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.list3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.list4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.list5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.list6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.list7 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.list8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.list9 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+
+/* フェードイン */
+.fadein {
+  /* 最初は非表示 */
+  transform: translateY(30px); //最初は下に設置しておく
+  opacity: 0;
+  visibility: hidden; //消してる
+  transition: transform 1s, opacity 1s, visibility 1s;
+}
+
+.is-fadein {
+  /* フェードイン時に入るクラス */
+  transform: translateX(0); //フェードインする時に0の位置に戻る
+  opacity: 1;
+  visibility: visible; //現れる
+}
+
+
+
+/* コンタクトセクション */
+.contact {
+  color: #fff;
+  background-color: #000;
+  padding: 50px 196px 60px;
+
+  &__group {
+    justify-content: space-between;
+  }
+
+  &__title {
+    height: 54px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__caption {
+    width: 45%;
+  }
+
+  &__form {
+    width: 45%;
+  }
+}
+
+.contact__caption-text {
+  font-size: 14.4px;
+  line-height: 21px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.contact__form {
+
+  &-text {
+    font-weight: 100;
+    font-size: 14.4px;
+    line-height: 21px;
+  }
+
+  &-name,
+  &-email {
+    width: 100%;
+    height: 44px;
+    color: #000;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    padding: 10px;
+    margin-bottom: 19px;
+  }
+
+  &-message {
+    width: 100%;
+    height: 68px;
+    resize: none;
+    color: #000;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    padding: 10px;
+    margin-bottom: 24px;
+  }
+
+  &-area {
+    width: 200px;
+    height: 45px;
+    font-size: 14.4px;
+    line-height: 21px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 12px 80px;
+    
+    &:hover{
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+
+/* フッター */
+.footer {
+  text-align: center;
+  background-color: #000;
+  padding-bottom: 10px;
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+  }
+}
