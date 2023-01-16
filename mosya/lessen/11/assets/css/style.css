@@ -1,8 +1,4 @@
 @charset "UTF-8";
-html {
-  overflow: overlay;
-}
-
 html::-webkit-scrollbar-thumb {
   background: #000;
   border: 1px solid ccc;
@@ -151,12 +147,30 @@ html::-webkit-scrollbar-corner {
 }
 
 /* メインビジュアル */
-.main-visual {
+.swiper {
   margin-bottom: 114px;
 }
-.main-visual__movie {
+.swiper .swiper__img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper .img1 {
+  -o-object-position: 0 41%;
+     object-position: 0 41%;
+}
+.swiper .img3 {
+  -o-object-position: 0 40%;
+     object-position: 0 40%;
+}
+.swiper .img4 {
+  -o-object-position: 0 30%;
+     object-position: 0 30%;
+}
+.swiper .img5 {
+  -o-object-position: 0 33%;
+     object-position: 0 33%;
 }
 
 .scroll {
